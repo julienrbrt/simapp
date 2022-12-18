@@ -2,10 +2,10 @@
 
 ## Use
 
-| Name  (binary) | Endpoint                                             | Faucet | RPC (port) | GRPC (port) | REST (port) |
-| -------------- | ---------------------------------------------------- | ------ | ---------- | ----------- | ----------- |
-| `simapp-next`  | [https://next.simapp.zone](https://next.simapp.zone) | 80     | 26657      | 9090/9091   | 1317        |
-| `simapp-v047`  | [https://v047.simapp.zone](https://v047.simapp.zone) | 80     | 26657      | 9090/9091   | 1317        |
+| Name  (binary) | Endpoint / Faucet                                    | RPC (port) | GRPC (port) | REST (port) |
+| -------------- | ---------------------------------------------------- | ---------- | ----------- | ----------- |
+| `simapp-next`  | [https://next.simapp.zone](https://next.simapp.zone) | 26657      | 9090/9091   | 1317        |
+| `simapp-v047`  | [https://v047.simapp.zone](https://v047.simapp.zone) | 26657      | 9090/9091   | 1317        |
 
 ## Details
 
