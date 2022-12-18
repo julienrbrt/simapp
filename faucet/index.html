@@ -4,8 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Simapp.zone Faucet</title>
-    <link rel="icon" href="./logo.svg" />
-    <meta name="”robots”" content="index, follow" />
+    <link
+      rel="icon"
+      href="https://raw.githubusercontent.com/julienrbrt/simapp/main/faucet/logo.svg"
+    />
+    <meta name="robots" content="index, follow" />
     <meta name="description" content="Simapp.zone Faucet" />
     <meta />
     <link
@@ -21,14 +24,15 @@
         <div class="py-5 text-center">
           <img
             id="logo"
-            class="d-block mx-auto mb-4"
-            src="./logo.svg"
-            :alt="`${name} Faucet`"
+            class="d-block mx-auto mb-4 w-25"
+            src="https://raw.githubusercontent.com/julienrbrt/simapp/main/faucet/logo.svg"
+            alt="logo"
           />
-          <h1><span id="name">{{ name }}</span> Faucet</h1>
+          <h1>Simapp.zone Faucet</h1>
+          <br />
           <p class="lead">
-            Dear, Cosmonauts! <br />
-            Welcome to our testnet! Are you looking for some tokens to start?
+            Welcome to simapp.zone! Get some tokens to start. <br />
+            The tokens are sent to each simapp.zone network.
           </p>
         </div>
         <div class="row g-5">
@@ -83,7 +87,6 @@
         data() {
           return {
             message: "",
-            name: "Simapp.zone",
             placeholder: "Input an address to request token",
             address: "",
           };
@@ -92,8 +95,7 @@
           fetch("/config.json")
             .then((response) => response.json())
             .then((data) => {
-              this.name = data.name;
-              this.placeholder = `Input an address (e.g.: ${data.sample}) to received tokens`;
+              this.placeholder = `Input an address (e.g.: ${data.sample}) for receiving tokens`;
             });
         },
         methods: {
