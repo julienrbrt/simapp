@@ -9,10 +9,11 @@ export default {
     version: "Next",
     // make sure that CORS is enabled in rpc section in config.toml
     // cors_allowed_origins = ["*"]
-    rpc_endpoint: "https://rpc-next.simapp.zone",
+    rpc_endpoint: "https://next.simapp.zone",
   },
   sender: {
     mnemonic:
+      process.env.FAUCET_MNEMONIC ||
       "surround miss nominee dream gap cross assault thank captain prosper drop duty group candy wealth weather scale put",
     option: {
       hdPaths: [stringToPath("m/44'/118'/0'/0/0")],

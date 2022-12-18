@@ -6,6 +6,12 @@ if [ $# -eq 0 ]
     exit 1
 fi
 
+# load env
+if [ -f ".env" ]; then
+    source .env
+fi
+
+# set variables
 SIMD_BIN=./app/$1/simapp-$1
 SIMD_HOME=./app/$1/.simapp
 CHAIN_ID=$1-1
@@ -22,8 +28,18 @@ cd ../..
 rm -rf $SIMD_HOME || true
 $SIMD_BIN config chain-id $CHAIN_ID --home $SIMD_HOME
 $SIMD_BIN config keyring-backend test --home $SIMD_HOME
-$SIMD_BIN keys add root --home $SIMD_HOME
-$SIMD_BIN keys add faucet --home $SIMD_HOME
+# add keys
+if [[ -z $ROOT_MNEMONIC ]]; then
+    $SIMD_BIN keys add root --home $SIMD_HOME
+else
+  echo $ROOT_MNEMONIC | $SIMD_BIN keys add root --recover --home $SIMD_HOME
+fi
+if [[ -z $FAUCET_MNEMONIC ]]; then
+  $SIMD_BIN keys add faucet --home $SIMD_HOME
+else
+  echo $FAUCET_MNEMONIC | $SIMD_BIN keys add faucet --recover --home $SIMD_HOME
+fi
+# init chain
 $SIMD_BIN init $1 --chain-id $CHAIN_ID --default-denom stake --home $SIMD_HOME
 # update genesis
 $SIMD_BIN genesis add-genesis-account root 100000000000000000stake --keyring-backend test --home $SIMD_HOME
