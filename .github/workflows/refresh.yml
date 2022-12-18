@@ -1,0 +1,21 @@
+# This job is used to clone the Cosmos SDK SimApp folder used by simapp.zone
+name: Refresh SimApp
+
+on:
+  schedule:
+    - cron: "0 1 * * *" # Every day at 1am UTC
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: update simapp
+        run: make update-all
+
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: sync simapp changes
