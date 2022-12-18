@@ -1,15 +1,18 @@
 import { stringToPath } from "@cosmjs/crypto";
 
 export default {
-  port: 8080, // http port
+  port: process.env.FAUCET_PORT || 8080, // http port
   db: {
-    path: "./db/faucet.db", // save request states
+    path: "./db/faucet-" + process.env.FAUCET_VERSION + ".db", // save request states
   },
   blockchain: {
-    version: process.env.VERSION || "",
+    version: process.env.FAUCET_VERSION || "",
     // make sure that CORS is enabled in rpc section in config.toml
     // cors_allowed_origins = ["*"]
-    rpc_endpoint: "https://" + (process.env.VERSION || "next") + ".simapp.zone",
+    rpc_endpoint:
+      "https://" +
+      (process.env.FAUCET_VERSION || "next") +
+      ".simapp.zone:26657",
   },
   sender: {
     mnemonic:
