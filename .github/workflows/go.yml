@@ -11,8 +11,11 @@ jobs:
           go-version: 1.19
       - name: Check out source
         uses: actions/checkout@v3
-      - name: Build
-        run: go build ./...
-      - name: Test
+      - name: Test Next
         run: |
+          cd app/next
+          go test -v ./...
+      - name: Test v047
+        run: |
+          cd app/v047
           go test -v ./...
