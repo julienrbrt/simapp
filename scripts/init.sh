@@ -48,15 +48,16 @@ $SIMD_BIN genesis add-genesis-account faucet 1000000000000000stake --keyring-bac
 $SIMD_BIN genesis gentx root 10000000000000000stake --chain-id $CHAIN_ID --home $SIMD_HOME
 $SIMD_BIN genesis collect-gentxs --home $SIMD_HOME
 
-# configure genesis
-jq '.app_state.gov.voting_params.voting_period = "3600s"' $GENESIS > $GENESIS # Udpate gov module
-
-# configure node (TODO use confix after https://github.com/cosmos/cosmos-sdk/pull/14342)
+# install dasel
 if ! command -v dasel &> /dev/null
 then
-    go install github.com/tomwright/dasel/cmd/dasel@master
+    go install github.com/tomwright/dasel/cmd/dasel@272b38fee3a2
 fi
 
+# configure genesis
+dasel put string -f $GENESIS '.app_state.gov.voting_params.voting_period' "3600s"
+
+# configure node (TODO use confix after https://github.com/cosmos/cosmos-sdk/pull/14342)
 dasel put bool -f $APP_CONFIG "telemetry.enabled" true
 dasel put int -f $APP_CONFIG "telemetry.prometheus-retention-time" 60
 dasel put bool -f $APP_CONFIG "api.enable" true
