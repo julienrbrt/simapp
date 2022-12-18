@@ -9,7 +9,7 @@ export default {
     version: process.env.VERSION || "",
     // make sure that CORS is enabled in rpc section in config.toml
     // cors_allowed_origins = ["*"]
-    rpc_endpoint: "https://" + (process.env.VERSION || "") + "simapp.zone",
+    rpc_endpoint: "https://" + (process.env.VERSION || "next") + ".simapp.zone",
   },
   sender: {
     mnemonic:
