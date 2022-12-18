@@ -28,11 +28,11 @@
             src="https://raw.githubusercontent.com/julienrbrt/simapp/main/faucet/logo.svg"
             alt="logo"
           />
-          <h1>Simapp.zone Faucet</h1>
+          <h1>SimApp.zone {{ version }} Faucet</h1>
           <br />
           <p class="lead">
-            Welcome to simapp.zone! Get some tokens to start. <br />
-            The tokens are sent to each simapp.zone network.
+            Get some tokens for SimApp.zone {{ version }} and start exploring
+            the Cosmos.
           </p>
         </div>
         <div class="row g-5">
@@ -69,7 +69,7 @@
       <footer class="my-5 pt-5 text-muted text-center text-small">
         <ul class="list-inline">
           <li class="list-inline-item">
-            <a href="https://github.com/julienrbrt/simapp">Source</a>
+            <a href="https://github.com/julienrbrt/simapp">Learn more</a>
           </li>
           <li class="list-inline-item">
             <a href="https://github.com/ping-pub/faucet">Credits</a>
@@ -89,6 +89,7 @@
             message: "",
             placeholder: "Input an address to request token",
             address: "",
+            version: "",
           };
         },
         created() {
@@ -96,6 +97,7 @@
             .then((response) => response.json())
             .then((data) => {
               this.placeholder = `Input an address (e.g.: ${data.sample}) for receiving tokens`;
+              this.version = data.version;
             });
         },
         methods: {

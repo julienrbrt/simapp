@@ -24,7 +24,10 @@ app.get("/config.json", async (req, res) => {
     conf.sender.option
   );
   const [firstAccount] = await wallet.getAccounts();
-  res.send({ sample: firstAccount.address });
+  res.send({
+    version: conf.blockchain.version,
+    sample: firstAccount.address,
+  });
 });
 
 app.get("/send/:address", async (req, res) => {
@@ -70,20 +73,14 @@ async function sendTx(recipient) {
   );
   const [firstAccount] = await wallet.getAccounts();
 
-  let results = [];
-  const rpcEndpoints = conf.blockchain.rpc_endpoint;
-  for (let i = 0; i < rpcEndpoints.length; i++) {
-    const client = await SigningStargateClient.connectWithSigner(
-      rpcEndpoints[i],
-      wallet
-    );
+  const rpcEndpoint = conf.blockchain.rpc_endpoint;
+  const client = await SigningStargateClient.connectWithSigner(
+    rpcEndpoint,
+    wallet
+  );
 
-    const amount = conf.tx.amount;
-    const fee = conf.tx.fee;
-    result.push(
-      client.sendTokens(firstAccount.address, recipient, [amount], fee)
-    );
-  }
+  const amount = conf.tx.amount;
+  const fee = conf.tx.fee;
 
-  return results;
+  return client.sendTokens(firstAccount.address, recipient, [amount], fee);
 }

@@ -16,6 +16,7 @@ go build -ldflags "-X github.com/cosmos/cosmos-sdk/version.Name=simd -X github.c
 cd ../..
 
 # configure simapp
+rm -rf $SIMD_HOME || true
 $SIMD_BIN config chain-id $CHAIN_ID --home $SIMD_HOME
 $SIMD_BIN config keyring-backend test --home $SIMD_HOME
 $SIMD_BIN keys add root --home $SIMD_HOME

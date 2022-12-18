@@ -6,9 +6,10 @@ export default {
     path: "./db/faucet.db", // save request states
   },
   blockchain: {
+    version: "Next",
     // make sure that CORS is enabled in rpc section in config.toml
     // cors_allowed_origins = ["*"]
-    rpc_endpoint: ["https://rpc-next.simapp.zone"],
+    rpc_endpoint: "https://rpc-next.simapp.zone",
   },
   sender: {
     mnemonic:
