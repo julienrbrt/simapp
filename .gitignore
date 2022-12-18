@@ -14,3 +14,4 @@ simapp-*
 
 # Config
 .simapp
+.env
