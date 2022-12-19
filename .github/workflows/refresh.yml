@@ -3,7 +3,7 @@ name: Refresh SimApp
 
 on:
   schedule:
-    - cron: "0 1,13 * * *" # Every day at 1am, 11am UTC
+    - cron: "0 1,13 * * *" # Every day at 1am, 13am UTC
 
 jobs:
   refresh:
