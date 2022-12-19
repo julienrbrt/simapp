@@ -43,10 +43,10 @@ fi
 # init chain
 $SIMD_BIN init simapp-zone --chain-id $CHAIN_ID --default-denom stake --home $SIMD_HOME
 # update genesis
-$SIMD_BIN genesis add-genesis-account root 100000000000000stake --keyring-backend test --home $SIMD_HOME
-$SIMD_BIN genesis add-genesis-account faucet 1000000000000stake --keyring-backend test --home $SIMD_HOME
+$SIMD_BIN genesis add-genesis-account root 1000000000stake --keyring-backend test --home $SIMD_HOME
+$SIMD_BIN genesis add-genesis-account faucet 100000000stake --keyring-backend test --home $SIMD_HOME
 # create default validator
-$SIMD_BIN genesis gentx root 10000000000000stake --chain-id $CHAIN_ID --home $SIMD_HOME
+$SIMD_BIN genesis gentx root 500000000stake --chain-id $CHAIN_ID --home $SIMD_HOME
 $SIMD_BIN genesis collect-gentxs --home $SIMD_HOME
 
 # install dasel
