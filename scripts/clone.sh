@@ -2,9 +2,12 @@
 
 if [ $# -eq 0 ]
   then
-    echo "No arguments supplied. Expected clone-simapp.sh <branch> <target-directory>"
+    echo "No arguments supplied. Expected clone.sh <branch> <target-directory>"
     exit 1
 fi
+
+# remove previous simapp
+rm -rf $2
 
 # clone cosmos-sdk
 export FILTER_BRANCH_SQUELCH_WARNING=1
@@ -13,6 +16,7 @@ cd $2
 
 # save last commit
 COMMIT=$(git rev-parse HEAD)
+echo $COMMIT > ./COMMIT
 
 # keep only simapp
 git filter-branch --subdirectory-filter simapp

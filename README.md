@@ -19,6 +19,7 @@
 To replicate `simapp.zone` configuration, use the `make init` command, using the simapp version argument.
 
 ```sh
+make build version={next|v047}
 make init version={next|v047}
 ```
 

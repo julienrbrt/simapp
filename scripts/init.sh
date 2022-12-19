@@ -19,10 +19,11 @@ CHAIN_ID=$1-1
 GENESIS=$SIMD_HOME/config/genesis.json
 APP_CONFIG=$SIMD_HOME/config/app.toml
 
-# build simapp
-cd app/$1
-go build -ldflags "-X github.com/cosmos/cosmos-sdk/version.Name=simd -X github.com/cosmos/cosmos-sdk/version.AppName=simd -X github.com/cosmos/cosmos-sdk/version.Version=$1 -X github.com/cosmos/cosmos-sdk/version.Commit=simapp-zone" -o simapp-$1 ./simd
-cd ../..
+# check if app exists
+if [ ! -f "$SIMD_BIN" ]; then
+    echo "App $SIMD_BIN does not exist. Please build it first."
+    exit 1
+fi
 
 # configure simapp
 rm -rf $SIMD_HOME || true
