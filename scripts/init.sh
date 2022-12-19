@@ -41,12 +41,12 @@ else
   echo $FAUCET_MNEMONIC | $SIMD_BIN keys add faucet --recover --home $SIMD_HOME
 fi
 # init chain
-$SIMD_BIN init $1 --chain-id $CHAIN_ID --default-denom stake --home $SIMD_HOME
+$SIMD_BIN init simapp-zone --chain-id $CHAIN_ID --default-denom stake --home $SIMD_HOME
 # update genesis
-$SIMD_BIN genesis add-genesis-account root 100000000000000000stake --keyring-backend test --home $SIMD_HOME
-$SIMD_BIN genesis add-genesis-account faucet 1000000000000000stake --keyring-backend test --home $SIMD_HOME
+$SIMD_BIN genesis add-genesis-account root 100000000000000stake --keyring-backend test --home $SIMD_HOME
+$SIMD_BIN genesis add-genesis-account faucet 1000000000000stake --keyring-backend test --home $SIMD_HOME
 # create default validator
-$SIMD_BIN genesis gentx root 10000000000000000stake --chain-id $CHAIN_ID --home $SIMD_HOME
+$SIMD_BIN genesis gentx root 10000000000000stake --chain-id $CHAIN_ID --home $SIMD_HOME
 $SIMD_BIN genesis collect-gentxs --home $SIMD_HOME
 
 # install dasel
@@ -56,7 +56,9 @@ then
 fi
 
 # configure genesis
-dasel put string -f $GENESIS '.app_state.gov.voting_params.voting_period' "3600s"
+dasel put string -f $GENESIS '.app_state.staking.params.unbonding_time' "43200s" # 12 hours
+dasel put string -f $GENESIS '.app_state.gov.params.voting_period' "3600s" # 1 hour
+dasel put string -f $GENESIS '.app_state.gov.params.max_deposit_period' "3600s" # 1 hour
 
 # configure node (TODO use confix after https://github.com/cosmos/cosmos-sdk/pull/14342)
 dasel put bool -f $APP_CONFIG "telemetry.enabled" true
