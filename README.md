@@ -1,6 +1,6 @@
 # `simapp.zone`
 
-`SimApp.zone` is a set of live raw `SimApp` instances from the Cosmos SDK.
+`simapp.zone` is a set of live raw `SimApp` instances from the Cosmos SDK.
 It provides instances that can be used for testing and development purposes.
 
 ## Use
@@ -9,6 +9,8 @@ It provides instances that can be used for testing and development purposes.
 | -------------- | ---------------------------------------------------- | ---------- | ----------- | ----------- |
 | `simapp-next`  | [https://next.simapp.zone](https://next.simapp.zone) | 26657      | 9090/9091   | 1317        |
 | `simapp-v047`  | [https://v047.simapp.zone](https://v047.simapp.zone) | 26657      | 9090/9091   | 1317        |
+
+An explorer is available at [`explorer.simapp.zone`](https://explorer.simapp.zone).
 
 ## Details
 
@@ -30,5 +32,6 @@ make init version={next|v047}
 
 ## Useful links
 
-- [Cosmos-SDK Documentation](https://docs.cosmos.network/)
+- [Explorer](https://explorer.simapp.zone/)
 - [API Reference](https://next.simapp.zone:1317/swagger/)
+- [Cosmos SDK Documentation](https://docs.cosmos.network/)
