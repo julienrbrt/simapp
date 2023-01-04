@@ -28,3 +28,11 @@ sed -i '/github.com\/cosmos\/cosmos-sdk => ..\/./d' go.mod
 
 # bump cosmos-sdk version to latest branch commit
 go get -u github.com/cosmos/cosmos-sdk@$COMMIT
+
+# if error while updating revert folder
+retVal=$?
+if [ $retVal -ne 0 ]; then
+  cd ../..
+  git restore -s@ -SW  -- ./app/$2
+fi
+exit $retVal

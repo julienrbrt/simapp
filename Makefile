@@ -4,11 +4,11 @@ PWD=$(shell pwd)
 
 update-next:
 	@cd app; \
-	$(PWD)/scripts/clone.sh main next
+	$(PWD)/scripts/update.sh main next
 
 update-v047:
 	@cd app; \
-	$(PWD)/scripts/clone.sh release/v0.47.x v047
+	$(PWD)/scripts/update.sh release/v0.47.x v047
 
 build:
 	@cd app/$(version); \
