@@ -2,6 +2,7 @@
 name: Refresh SimApp
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: "0 1 * * *" # Every day at 1am UTC
 
@@ -13,9 +14,15 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: update simapp
-        run: make update-all
+      - name: update simapp next
+        if: always()
+        run: make update-next
+
+      - name: update simapp v047
+        if: always()
+        run: make update-v047
 
       - uses: stefanzweifel/git-auto-commit-action@v4
+        if: always()
         with:
           commit_message: sync simapp changes

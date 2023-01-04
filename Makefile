@@ -2,8 +2,6 @@
 
 PWD=$(shell pwd)
 
-update-all: update-next update-v047
-
 update-next:
 	@cd app; \
 	$(PWD)/scripts/clone.sh main next
