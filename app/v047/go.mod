@@ -8,7 +8,7 @@ require (
 	cosmossdk.io/depinject v1.0.0-alpha.3
 	cosmossdk.io/math v1.0.0-beta.4
 	cosmossdk.io/tools/rosetta v0.2.0
-	github.com/cosmos/cosmos-sdk v0.47.0-alpha2.0.20230105220249-0a1d0b912471
+	github.com/cosmos/cosmos-sdk v0.47.0-alpha2.0.20230107122001-5d70291fbb92
 	github.com/golang/mock v1.6.0
 	github.com/spf13/cast v1.5.0
 	github.com/spf13/cobra v1.6.1

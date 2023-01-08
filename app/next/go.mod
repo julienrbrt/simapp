@@ -9,7 +9,7 @@ require (
 	cosmossdk.io/math v1.0.0-beta.4
 	cosmossdk.io/tools/rosetta v0.2.0
 	github.com/cosmos/cosmos-db v0.0.0-20221226095112-f3c38ecb5e32
-	github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230106145401-6f3380d40b3d
+	github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230107115612-37292437c114
 	github.com/golang/mock v1.6.0
 	github.com/spf13/cast v1.5.0
 	github.com/spf13/cobra v1.6.1
