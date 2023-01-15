@@ -22,12 +22,9 @@ echo $COMMIT > ./COMMIT
 git filter-branch --subdirectory-filter simapp
 rm -rf .git
 
-# remove replace tag from go.mod
-sed -i '/\/\/ Simapp always use the latest version of the cosmos-sdk/d' go.mod
-sed -i '/github.com\/cosmos\/cosmos-sdk => ..\/./d' go.mod
-
 # bump cosmos-sdk version to latest branch commit
-go get -u github.com/cosmos/cosmos-sdk@$COMMIT
+go mod edit -replace github.com/cosmos/cosmos-sdk=github.com/cosmos/cosmos-sdk@$COMMIT
+go mod tidy
 
 # if error while updating revert folder
 retVal=$?
