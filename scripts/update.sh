@@ -22,8 +22,17 @@ echo $COMMIT > ./COMMIT
 git filter-branch --subdirectory-filter simapp
 rm -rf .git
 
-# bump cosmos-sdk version to latest branch commit
-go mod edit -replace github.com/cosmos/cosmos-sdk=github.com/cosmos/cosmos-sdk@$COMMIT
+# bump all cosmos-sdk packages to latest branch commit
+VERSIONS=$(go mod edit -json | jq -r '.Replace[].Old.Path')
+REPLACES=""
+for version in $VERSIONS; do
+  if [[ $version == "github.com/cosmos/cosmos-sdk"* || $version == "cosmossdk.io/"* ]]; then
+    REPLACES+=" -replace $version=$version@$COMMIT"
+  fi
+done
+if [ -n "$REPLACES" ]; then
+  go mod edit $REPLACES
+fi
 go mod tidy
 
 # if error while updating revert folder
