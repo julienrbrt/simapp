@@ -23,6 +23,8 @@ require (
 	google.golang.org/protobuf v1.28.1
 )
 
+require github.com/spf13/pflag v1.0.5
+
 require (
 	cloud.google.com/go v0.105.0 // indirect
 	cloud.google.com/go/compute v1.13.0 // indirect
@@ -61,7 +63,7 @@ require (
 	github.com/cosmos/gogoproto v1.4.3 // indirect
 	github.com/cosmos/gorocksdb v1.2.0 // indirect
 	github.com/cosmos/iavl v0.20.0-alpha1 // indirect
-	github.com/cosmos/ledger-cosmos-go v0.13.0 // indirect
+	github.com/cosmos/ledger-cosmos-go v0.12.2 // indirect
 	github.com/cosmos/rosetta-sdk-go v0.9.0 // indirect
 	github.com/creachadair/atomicfile v0.2.7 // indirect
 	github.com/creachadair/taskgroup v0.3.2 // indirect
@@ -150,7 +152,6 @@ require (
 	github.com/sasha-s/go-deadlock v0.3.1 // indirect
 	github.com/spf13/afero v1.9.2 // indirect
 	github.com/spf13/jwalterweatherman v1.1.0 // indirect
-	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/subosito/gotenv v1.4.1 // indirect
 	github.com/syndtr/goleveldb v1.0.1-0.20210819022825-2ae1ddf74ef7 // indirect
 	github.com/tendermint/btcd v0.1.1 // indirect
@@ -173,7 +174,7 @@ require (
 	golang.org/x/xerrors v0.0.0-20220907171357-04be3eba64a2 // indirect
 	google.golang.org/api v0.103.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
-	google.golang.org/genproto v0.0.0-20230113154510-dbe35b8444a5 // indirect
+	google.golang.org/genproto v0.0.0-20230112194545-e10362b5ecf9 // indirect
 	google.golang.org/grpc v1.52.0 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
@@ -186,12 +187,15 @@ require (
 
 replace (
 	// TODO delete after release of confix
-	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20230116185657-874d9bdf9ab0
+	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20230117222402-5233d5e67c74
+	// use cosmos fork of keyring
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 	// Simapp always use the latest version of the cosmos-sdk
-	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230116185657-874d9bdf9ab0
-	github.com/cosmos/cosmos-sdk/x/nft => github.com/cosmos/cosmos-sdk/x/nft v0.0.0-20230116185657-874d9bdf9ab0
+	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230117222402-5233d5e67c74
+	github.com/cosmos/cosmos-sdk/x/nft => github.com/cosmos/cosmos-sdk/x/nft v0.0.0-20230117222402-5233d5e67c74
 	// Fix upstream GHSA-h395-qcrw-5vmq vulnerability.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.8.1
+	// use informal systems fork of tendermint
+	github.com/tendermint/tendermint => github.com/informalsystems/tendermint v0.37.0-rc2
 )
