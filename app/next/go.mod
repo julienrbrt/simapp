@@ -33,6 +33,7 @@ require (
 	cloud.google.com/go/storage v1.27.0 // indirect
 	cosmossdk.io/collections v0.0.0-20230106101515-aeac21494476 // indirect
 	cosmossdk.io/errors v1.0.0-beta.7 // indirect
+	cosmossdk.io/x/tx v0.1.0 // indirect
 	filippo.io/edwards25519 v1.0.0-rc.1 // indirect
 	github.com/99designs/go-keychain v0.0.0-20191008050251-8e49817e8af4 // indirect
 	github.com/99designs/keyring v1.2.1 // indirect
@@ -154,8 +155,6 @@ require (
 	github.com/spf13/jwalterweatherman v1.1.0 // indirect
 	github.com/subosito/gotenv v1.4.1 // indirect
 	github.com/syndtr/goleveldb v1.0.1-0.20210819022825-2ae1ddf74ef7 // indirect
-	github.com/tendermint/btcd v0.1.1 // indirect
-	github.com/tendermint/crypto v0.0.0-20191022145703-50d29ede1e15 // indirect
 	github.com/tendermint/go-amino v0.16.0 // indirect
 	github.com/tendermint/tm-db v0.6.7 // indirect
 	github.com/tidwall/btree v1.6.0 // indirect
@@ -187,12 +186,12 @@ require (
 
 replace (
 	// TODO delete after release of confix
-	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20230117222402-5233d5e67c74
+	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20230118151514-74d7a0dfcd9f
 	// use cosmos fork of keyring
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 	// Simapp always use the latest version of the cosmos-sdk
-	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230117222402-5233d5e67c74
-	github.com/cosmos/cosmos-sdk/x/nft => github.com/cosmos/cosmos-sdk/x/nft v0.0.0-20230117222402-5233d5e67c74
+	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230118151514-74d7a0dfcd9f
+	github.com/cosmos/cosmos-sdk/x/nft => github.com/cosmos/cosmos-sdk/x/nft v0.0.0-20230118151514-74d7a0dfcd9f
 	// Fix upstream GHSA-h395-qcrw-5vmq vulnerability.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.8.1
