@@ -185,12 +185,12 @@ require (
 
 replace (
 	// TODO delete after release of confix
-	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20230119230601-d74d0e4e8cd5
+	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20230120150717-4f6f6c00021f
 	// use cosmos fork of keyring
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 	// Simapp always use the latest version of the cosmos-sdk
-	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230119230601-d74d0e4e8cd5
-	github.com/cosmos/cosmos-sdk/x/nft => github.com/cosmos/cosmos-sdk/x/nft v0.0.0-20230119230601-d74d0e4e8cd5
+	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230120150717-4f6f6c00021f
+	github.com/cosmos/cosmos-sdk/x/nft => github.com/cosmos/cosmos-sdk/x/nft v0.0.0-20230120150717-4f6f6c00021f
 	// Fix upstream GHSA-h395-qcrw-5vmq vulnerability.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.8.1

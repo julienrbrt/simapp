@@ -60,8 +60,8 @@ cosmossdk.io/errors v1.0.0-beta.7 h1:gypHW76pTQGVnHKo6QBkb4yFOJjC+sUGRc5Al3Odj1w
 cosmossdk.io/errors v1.0.0-beta.7/go.mod h1:mz6FQMJRku4bY7aqS/Gwfcmr/ue91roMEKAmDUDpBfE=
 cosmossdk.io/math v1.0.0-beta.4 h1:JtKedVLGzA0vv84xjYmZ75RKG35Kf2WwcFu8IjRkIIw=
 cosmossdk.io/math v1.0.0-beta.4/go.mod h1:An0MllWJY6PxibUpnwGk8jOm+a/qIxlKmL5Zyp9NnaM=
-cosmossdk.io/tools/confix v0.0.0-20230119230601-d74d0e4e8cd5 h1:+J+RIjK2P1PM2E8bwRBAVI3D7HuxEOwGQ0o3MVqQVp0=
-cosmossdk.io/tools/confix v0.0.0-20230119230601-d74d0e4e8cd5/go.mod h1:/apC5+JHM2A72kUY3z+55FWdIn/2ai2mTAYtSBDY4Lo=
+cosmossdk.io/tools/confix v0.0.0-20230120150717-4f6f6c00021f h1:LMXqH69KBG/R8w18sooHtoUZ0+5hcc99m6OjBiooDAo=
+cosmossdk.io/tools/confix v0.0.0-20230120150717-4f6f6c00021f/go.mod h1:/apC5+JHM2A72kUY3z+55FWdIn/2ai2mTAYtSBDY4Lo=
 cosmossdk.io/tools/rosetta v0.2.0 h1:Ae499UiZ9yPNCXvjOBO/R9I1pksCJfxoqWauEZgA/gs=
 cosmossdk.io/tools/rosetta v0.2.0/go.mod h1:3mn8QuE2wLUdTi77/gbDXdFqXZdBdiBJhgAWUTSXPv8=
 cosmossdk.io/x/tx v0.1.0 h1:uyyYVjG22B+jf54N803Z99Y1uPvfuNP3K1YShoCHYL8=
@@ -200,10 +200,10 @@ github.com/cosmos/cosmos-db v0.0.0-20221226095112-f3c38ecb5e32 h1:zlCp9n3uwQieEL
 github.com/cosmos/cosmos-db v0.0.0-20221226095112-f3c38ecb5e32/go.mod h1:kwMlEC4wWvB48zAShGKVqboJL6w4zCLesaNQ3YLU2BQ=
 github.com/cosmos/cosmos-proto v1.0.0-beta.1 h1:iDL5qh++NoXxG8hSy93FdYJut4XfgbShIocllGaXx/0=
 github.com/cosmos/cosmos-proto v1.0.0-beta.1/go.mod h1:8k2GNZghi5sDRFw/scPL8gMSowT1vDA+5ouxL8GjaUE=
-github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230119230601-d74d0e4e8cd5 h1:oFLKwBo8ToTELNpIV8zsUd+FvUAf6itWggNqY3oiX7Q=
-github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230119230601-d74d0e4e8cd5/go.mod h1:VnWSm1GHh4F1hDR7qnGElsnAWiDbapzTxRwyhpWCo/4=
-github.com/cosmos/cosmos-sdk/x/nft v0.0.0-20230119230601-d74d0e4e8cd5 h1:fK+oFTz7yVxdlYkb1tOwIh39Nv/OpGNtc8MpGwIwQCY=
-github.com/cosmos/cosmos-sdk/x/nft v0.0.0-20230119230601-d74d0e4e8cd5/go.mod h1:scmIS3kcL6O3UrU222VoGaHDGZ3dl33l/5KUWLeqIE4=
+github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230120150717-4f6f6c00021f h1:OxSodxeo7EahUzeMGLjTKFMZ7UCSpiIAj0JacIb6nVE=
+github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230120150717-4f6f6c00021f/go.mod h1:VnWSm1GHh4F1hDR7qnGElsnAWiDbapzTxRwyhpWCo/4=
+github.com/cosmos/cosmos-sdk/x/nft v0.0.0-20230120150717-4f6f6c00021f h1:5at1Z1IE83X3BuEYTPt60TFu6h3JmRgaSW8rAqVebcw=
+github.com/cosmos/cosmos-sdk/x/nft v0.0.0-20230120150717-4f6f6c00021f/go.mod h1:scmIS3kcL6O3UrU222VoGaHDGZ3dl33l/5KUWLeqIE4=
 github.com/cosmos/go-bip39 v0.0.0-20180819234021-555e2067c45d/go.mod h1:tSxLoYXyBmiFeKpvmq4dzayMdCjCnu8uqmCysIGBT2Y=
 github.com/cosmos/go-bip39 v1.0.0 h1:pcomnQdrdH22njcAatO0yWojsUnCO3y2tNoV1cb6hHY=
 github.com/cosmos/go-bip39 v1.0.0/go.mod h1:RNJv0H/pOIVgxw6KS7QeX2a0Uo0aKUlfhZ4xuwvCdJw=
