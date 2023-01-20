@@ -5,10 +5,10 @@ It provides instances that can be used for testing and development purposes.
 
 ## Use
 
-| Name  (binary) | Endpoint / Faucet                                    | RPC (port) | GRPC (port) | REST (port) |
-| -------------- | ---------------------------------------------------- | ---------- | ----------- | ----------- |
-| `simapp-next`  | [https://next.simapp.zone](https://next.simapp.zone) | 26657      | 9090/9091   | 1317        |
-| `simapp-v047`  | [https://v047.simapp.zone](https://v047.simapp.zone) | 26657      | 9090/9091   | 1317        |
+| Endpoint / Faucet                                    | RPC (port) | gRPC (port) | gRPC-web (port) | gRPC-gateway (port) |
+| ---------------------------------------------------- | ---------- | ----------- | --------------- | ------------------- |
+| [https://next.simapp.zone](https://next.simapp.zone) | 26657      | 9090        | 1317            | 1317                |
+| [https://v047.simapp.zone](https://v047.simapp.zone) | 26657      | 9090        | 9091            | 1317                |
 
 An explorer is available at [`explorer.simapp.zone`](https://explorer.simapp.zone).
 
