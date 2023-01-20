@@ -1,7 +1,7 @@
 # `simapp.zone`
 
 `simapp.zone` is a set of live raw `SimApp` instances from the Cosmos SDK.
-It provides instances that can be used for testing and development purposes.
+It provides instances that can be used for testing and development purpose.
 
 ## Use
 
@@ -14,12 +14,12 @@ An explorer is available at [`explorer.simapp.zone`](https://explorer.simapp.zon
 
 ## Details
 
-The nodes binary are updated daily to the latest commited version, but the state is *not* reset.
+The nodes binaries are updated daily on the nodes to the latest commited version, but the state is *not* reset.
 
-| Name (binary) | Version               | Source                                                                   |
-| ------------- | --------------------- | ------------------------------------------------------------------------ |
-| `simapp-next` | `next` (a.k.a `main`) | [simapp@main](https://github.com/cosmos/cosmos-sdk/tree/main/simapp)     |
-| `simapp-v047` | `v0.47`               | [simapp@v0.47](https://github.com/cosmos/cosmos-sdk/tree/v0.47.0/simapp) |
+| Name (binary) | Version               | Source                                                                           |
+| ------------- | --------------------- | -------------------------------------------------------------------------------- |
+| `simapp-next` | `next` (a.k.a `main`) | [simapp@main](https://github.com/cosmos/cosmos-sdk/tree/main/simapp)             |
+| `simapp-v047` | `v0.47`               | [simapp@v0.47](https://github.com/cosmos/cosmos-sdk/tree/release/v0.47.x/simapp) |
 
 ## Use locally
 
