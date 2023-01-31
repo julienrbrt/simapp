@@ -68,7 +68,7 @@ require (
 	github.com/cosmos/iavl v0.20.0-alpha1 // indirect
 	github.com/cosmos/ledger-cosmos-go v0.13.0 // indirect
 	github.com/cosmos/rosetta-sdk-go v0.9.0 // indirect
-	github.com/creachadair/atomicfile v0.2.7 // indirect
+	github.com/creachadair/atomicfile v0.2.8 // indirect
 	github.com/creachadair/taskgroup v0.3.2 // indirect
 	github.com/creachadair/tomledit v0.0.24 // indirect
 	github.com/danieljoos/wincred v1.1.2 // indirect
@@ -188,17 +188,17 @@ require (
 
 // TODO tag all extracted modules after SDK refactor
 replace (
-	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20230128185942-5f08a5c9b0cb
-	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20230128185942-5f08a5c9b0cb
-	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20230128185942-5f08a5c9b0cb
-	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20230128185942-5f08a5c9b0cb
+	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20230130185847-54a14487e968
+	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20230130185847-54a14487e968
+	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20230130185847-54a14487e968
+	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20230130185847-54a14487e968
 )
 
 replace (
 	// use cosmos fork of keyring
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 	// Simapp always use the latest version of the cosmos-sdk
-	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230128185942-5f08a5c9b0cb
+	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230130185847-54a14487e968
 	// Fix upstream GHSA-h395-qcrw-5vmq vulnerability.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.8.1
