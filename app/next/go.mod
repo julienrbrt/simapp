@@ -188,18 +188,18 @@ require (
 
 // TODO tag all extracted modules after SDK refactor
 replace (
-	cosmossdk.io/store => cosmossdk.io/store v0.0.0-20230131215232-b266522c8852
-	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20230131215232-b266522c8852
-	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20230131215232-b266522c8852
-	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20230131215232-b266522c8852
-	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20230131215232-b266522c8852
+	cosmossdk.io/store => cosmossdk.io/store v0.0.0-20230201234215-6b256ce7c087
+	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20230201234215-6b256ce7c087
+	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20230201234215-6b256ce7c087
+	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20230201234215-6b256ce7c087
+	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20230201234215-6b256ce7c087
 )
 
 replace (
 	// use cosmos fork of keyring
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 	// Simapp always use the latest version of the cosmos-sdk
-	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230131215232-b266522c8852
+	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230201234215-6b256ce7c087
 	github.com/cosmos/iavl => github.com/cosmos/iavl v0.20.0-alpha.2
 	// Fix upstream GHSA-h395-qcrw-5vmq vulnerability.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
