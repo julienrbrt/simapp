@@ -7,7 +7,7 @@ require (
 	cosmossdk.io/client/v2 v2.0.0-20230104083136-11f46a0bae58
 	cosmossdk.io/core v0.5.1
 	cosmossdk.io/depinject v1.0.0-alpha.3
-	cosmossdk.io/math v1.0.0-beta.4
+	cosmossdk.io/math v1.0.0-beta.5
 	cosmossdk.io/store v0.0.0-20230202103518-eb86b68caea0
 	cosmossdk.io/tools/confix v0.0.0-20230120150717-4f6f6c00021f
 	cosmossdk.io/tools/rosetta v0.2.0
@@ -65,7 +65,7 @@ require (
 	github.com/cosmos/gogogateway v1.2.0 // indirect
 	github.com/cosmos/gogoproto v1.4.4 // indirect
 	github.com/cosmos/gorocksdb v1.2.0 // indirect
-	github.com/cosmos/iavl v0.20.0-alpha1.0.20230129210330-66c167f401c7 // indirect
+	github.com/cosmos/iavl v0.20.0-alpha3 // indirect
 	github.com/cosmos/ledger-cosmos-go v0.13.0 // indirect
 	github.com/cosmos/rosetta-sdk-go v0.9.0 // indirect
 	github.com/creachadair/atomicfile v0.2.8 // indirect
@@ -186,24 +186,20 @@ require (
 	sigs.k8s.io/yaml v1.3.0 // indirect
 )
 
-// Using this replace directive as v0.20.0-alpha1 > v0.20.0-alpha.2
-// This can be deleted when a v0.20.0-alpha3 is tagged or anything lexicographically above than v0.20.0-alpha1
-replace github.com/cosmos/iavl => github.com/cosmos/iavl v0.20.0-alpha.2
-
 // TODO tag all extracted modules after SDK refactor
 replace (
-	cosmossdk.io/store => cosmossdk.io/store v0.0.0-20230202232528-4251905d56e0
-	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20230202232528-4251905d56e0
-	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20230202232528-4251905d56e0
-	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20230202232528-4251905d56e0
-	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20230202232528-4251905d56e0
+	cosmossdk.io/store => cosmossdk.io/store v0.0.0-20230203235953-c9ba06bf775c
+	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20230203235953-c9ba06bf775c
+	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20230203235953-c9ba06bf775c
+	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20230203235953-c9ba06bf775c
+	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20230203235953-c9ba06bf775c
 )
 
 replace (
 	// use cosmos fork of keyring
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 	// Simapp always use the latest version of the cosmos-sdk
-	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230202232528-4251905d56e0
+	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230203235953-c9ba06bf775c
 	// Fix upstream GHSA-h395-qcrw-5vmq vulnerability.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.8.1
