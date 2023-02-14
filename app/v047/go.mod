@@ -164,7 +164,7 @@ replace (
 	// use cosmos fork of keyring
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 	// Simapp always use the latest version of the cosmos-sdk
-	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.47.0-rc2.0.20230209150357-6d2087ccf11b
+	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.47.0-rc2.0.20230213211939-54cf870a3ca5
 	// Fix upstream GHSA-h395-qcrw-5vmq vulnerability.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.8.1
