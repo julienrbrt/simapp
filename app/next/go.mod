@@ -191,13 +191,13 @@ require (
 // Replace here are pending PRs, or version to be tagged
 replace (
 	// TODO tag all extracted modules after SDK refactor
-	cosmossdk.io/log => cosmossdk.io/log v0.0.0-20230214003724-21909748e55f
-	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20230214003724-21909748e55f
-	cosmossdk.io/tools/rosetta => cosmossdk.io/tools/rosetta v0.2.1-0.20230214003724-21909748e55f
-	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20230214003724-21909748e55f
-	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20230214003724-21909748e55f
-	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20230214003724-21909748e55f
-	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20230214003724-21909748e55f
+	cosmossdk.io/log => cosmossdk.io/log v0.0.0-20230214212615-dfb3271cddef
+	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20230214212615-dfb3271cddef
+	cosmossdk.io/tools/rosetta => cosmossdk.io/tools/rosetta v0.2.1-0.20230214212615-dfb3271cddef
+	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20230214212615-dfb3271cddef
+	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20230214212615-dfb3271cddef
+	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20230214212615-dfb3271cddef
+	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20230214212615-dfb3271cddef
 	// TODO update/remove after v0.37.x tag of CometBFT
 	github.com/cometbft/cometbft => github.com/cometbft/cometbft v0.0.0-20230203130311-387422ac220d
 )
@@ -207,7 +207,7 @@ replace (
 	// use cosmos fork of keyring
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 	// Simapp always use the latest version of the cosmos-sdk
-	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230214003724-21909748e55f
+	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230214212615-dfb3271cddef
 	// Fix upstream GHSA-h395-qcrw-5vmq vulnerability.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.8.1
