@@ -8,7 +8,7 @@ require (
 	cosmossdk.io/core v0.5.1
 	cosmossdk.io/depinject v1.0.0-alpha.3
 	cosmossdk.io/log v0.0.0
-	cosmossdk.io/math v1.0.0-beta.6
+	cosmossdk.io/math v1.0.0-beta.6.0.20230216172121-959ce49135e4
 	cosmossdk.io/store v0.0.0-20230206092147-e03195e4b8a7
 	cosmossdk.io/tools/confix v0.0.0-20230120150717-4f6f6c00021f
 	cosmossdk.io/tools/rosetta v0.2.0
@@ -191,13 +191,13 @@ require (
 // Replace here are pending PRs, or version to be tagged
 replace (
 	// TODO tag all extracted modules after SDK refactor
-	cosmossdk.io/log => cosmossdk.io/log v0.0.0-20230217170540-497dc2cb78bb
-	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20230217170540-497dc2cb78bb
-	cosmossdk.io/tools/rosetta => cosmossdk.io/tools/rosetta v0.2.1-0.20230217170540-497dc2cb78bb
-	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20230217170540-497dc2cb78bb
-	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20230217170540-497dc2cb78bb
-	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20230217170540-497dc2cb78bb
-	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20230217170540-497dc2cb78bb
+	cosmossdk.io/log => cosmossdk.io/log v0.0.0-20230218183946-2b484a241ffb
+	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20230218183946-2b484a241ffb
+	cosmossdk.io/tools/rosetta => cosmossdk.io/tools/rosetta v0.2.1-0.20230218183946-2b484a241ffb
+	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20230218183946-2b484a241ffb
+	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20230218183946-2b484a241ffb
+	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20230218183946-2b484a241ffb
+	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20230218183946-2b484a241ffb
 	// TODO update/remove after v0.37.x tag of CometBFT
 	github.com/cometbft/cometbft => github.com/cometbft/cometbft v0.0.0-20230203130311-387422ac220d
 )
@@ -207,7 +207,7 @@ replace (
 	// use cosmos fork of keyring
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 	// Simapp always use the latest version of the cosmos-sdk
-	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230217170540-497dc2cb78bb
+	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230218183946-2b484a241ffb
 	// Fix upstream GHSA-h395-qcrw-5vmq vulnerability.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.8.1
