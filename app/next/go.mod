@@ -173,6 +173,7 @@ require (
 	golang.org/x/exp v0.0.0-20230213192124-5e25df0256eb // indirect
 	golang.org/x/net v0.7.0 // indirect
 	golang.org/x/oauth2 v0.5.0 // indirect
+	golang.org/x/sync v0.1.0 // indirect
 	golang.org/x/sys v0.5.0 // indirect
 	golang.org/x/term v0.5.0 // indirect
 	golang.org/x/text v0.7.0 // indirect
@@ -194,12 +195,12 @@ require (
 // Replace here are pending PRs, or version to be tagged
 replace (
 	// TODO tag all extracted modules after SDK refactor
-	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20230221223556-27f3c729a3dd
-	cosmossdk.io/tools/rosetta => cosmossdk.io/tools/rosetta v0.2.1-0.20230221223556-27f3c729a3dd
-	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20230221223556-27f3c729a3dd
-	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20230221223556-27f3c729a3dd
-	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20230221223556-27f3c729a3dd
-	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20230221223556-27f3c729a3dd
+	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20230222174159-eb9868550871
+	cosmossdk.io/tools/rosetta => cosmossdk.io/tools/rosetta v0.2.1-0.20230222174159-eb9868550871
+	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20230222174159-eb9868550871
+	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20230222174159-eb9868550871
+	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20230222174159-eb9868550871
+	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20230222174159-eb9868550871
 )
 
 // Below are the long-lived replace of the SimApp
@@ -207,7 +208,7 @@ replace (
 	// use cosmos fork of keyring
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 	// Simapp always use the latest version of the cosmos-sdk
-	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230221223556-27f3c729a3dd
+	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230222174159-eb9868550871
 	// Fix upstream GHSA-h395-qcrw-5vmq vulnerability.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.8.1
