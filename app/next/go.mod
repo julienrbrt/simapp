@@ -151,7 +151,6 @@ require (
 	github.com/prometheus/client_model v0.3.0 // indirect
 	github.com/prometheus/common v0.40.0 // indirect
 	github.com/prometheus/procfs v0.9.0 // indirect
-	github.com/rakyll/statik v0.1.7 // indirect
 	github.com/rcrowley/go-metrics v0.0.0-20201227073835-cf1acfcdf475 // indirect
 	github.com/rogpeppe/go-internal v1.9.0 // indirect
 	github.com/rs/cors v1.8.3 // indirect
@@ -195,12 +194,12 @@ require (
 // Replace here are pending PRs, or version to be tagged
 replace (
 	// TODO tag all extracted modules after SDK refactor
-	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20230227220147-82e7ed1f0827
-	cosmossdk.io/tools/rosetta => cosmossdk.io/tools/rosetta v0.2.1-0.20230227220147-82e7ed1f0827
-	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20230227220147-82e7ed1f0827
-	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20230227220147-82e7ed1f0827
-	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20230227220147-82e7ed1f0827
-	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20230227220147-82e7ed1f0827
+	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20230228204446-44495e7a7934
+	cosmossdk.io/tools/rosetta => cosmossdk.io/tools/rosetta v0.2.1-0.20230228204446-44495e7a7934
+	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20230228204446-44495e7a7934
+	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20230228204446-44495e7a7934
+	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20230228204446-44495e7a7934
+	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20230228204446-44495e7a7934
 )
 
 // Below are the long-lived replace of the SimApp
@@ -208,7 +207,7 @@ replace (
 	// use cosmos fork of keyring
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 	// Simapp always use the latest version of the cosmos-sdk
-	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230227220147-82e7ed1f0827
+	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230228204446-44495e7a7934
 	// Fix upstream GHSA-h395-qcrw-5vmq vulnerability.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.8.1
