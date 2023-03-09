@@ -14,14 +14,17 @@ import (
 )
 
 func TestInitCmd(t *testing.T) {
+	tempDir := t.TempDir()
+
 	rootCmd := cmd.NewRootCmd()
 	rootCmd.SetArgs([]string{
 		"init",        // Test the init cmd
 		"simapp-test", // Moniker
+		fmt.Sprintf("--%s=%s", flags.FlagHome, tempDir),
 		fmt.Sprintf("--%s=%s", cli.FlagOverwrite, "true"), // Overwrite genesis.json, in case it already exists
 	})
 
-	require.NoError(t, svrcmd.Execute(rootCmd, "", simapp.DefaultNodeHome))
+	require.NoError(t, svrcmd.Execute(rootCmd, "", tempDir))
 }
 
 func TestHomeFlagRegistration(t *testing.T) {
