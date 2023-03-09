@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@cosmjs/crypto": "^0.29.5",
+    "@cosmjs/crypto": "^0.30.0",
     "@cosmjs/proto-signing": "^0.29.5",
     "@cosmjs/stargate": "^0.29.5",
     "express": "^4.18.2",
