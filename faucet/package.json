@@ -9,9 +9,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@cosmjs/crypto": "^0.30.0",
-    "@cosmjs/proto-signing": "^0.30.0",
-    "@cosmjs/stargate": "^0.30.0",
+    "@cosmjs/crypto": "^0.30.1",
+    "@cosmjs/proto-signing": "^0.30.1",
+    "@cosmjs/stargate": "^0.30.1",
     "express": "^4.18.2",
     "level": "^8.0.0",
     "nodemodule": "^0.3.0"
