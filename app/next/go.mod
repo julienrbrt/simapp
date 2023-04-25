@@ -3,7 +3,7 @@ module cosmossdk.io/simapp
 go 1.20
 
 require (
-	cosmossdk.io/api v0.4.0
+	cosmossdk.io/api v0.4.1
 	cosmossdk.io/client/v2 v2.0.0-20230309163709-87da587416ba
 	cosmossdk.io/core v0.6.1
 	cosmossdk.io/depinject v1.0.0-alpha.3
@@ -49,7 +49,7 @@ require (
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/bgentry/go-netrc v0.0.0-20140422174119-9fd32a8b3d3d // indirect
 	github.com/bgentry/speakeasy v0.1.1-0.20220910012023-760eaf8b6816 // indirect
-	github.com/bits-and-blooms/bitset v1.6.0 // indirect
+	github.com/bits-and-blooms/bitset v1.7.0 // indirect
 	github.com/btcsuite/btcd/btcec/v2 v2.3.2 // indirect
 	github.com/cenkalti/backoff/v4 v4.1.3 // indirect
 	github.com/cespare/xxhash v1.1.0 // indirect
@@ -196,14 +196,14 @@ require (
 // Replace here are pending PRs, or version to be tagged
 replace (
 	// TODO tag all extracted modules after SDK refactor
-	cosmossdk.io/api => cosmossdk.io/api v0.4.1-0.20230423204932-f0018246f107
-	cosmossdk.io/store => cosmossdk.io/store v0.1.0-alpha.1.0.20230423204932-f0018246f107
-	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20230423204932-f0018246f107
-	cosmossdk.io/tools/rosetta => cosmossdk.io/tools/rosetta v0.2.1-0.20230423204932-f0018246f107
-	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20230423204932-f0018246f107
-	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20230423204932-f0018246f107
-	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20230423204932-f0018246f107
-	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20230423204932-f0018246f107
+	cosmossdk.io/api => cosmossdk.io/api v0.4.2-0.20230424194318-e3860acb0473
+	cosmossdk.io/store => cosmossdk.io/store v0.1.0-alpha.1.0.20230424194318-e3860acb0473
+	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20230424194318-e3860acb0473
+	cosmossdk.io/tools/rosetta => cosmossdk.io/tools/rosetta v0.2.1-0.20230424194318-e3860acb0473
+	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20230424194318-e3860acb0473
+	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20230424194318-e3860acb0473
+	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20230424194318-e3860acb0473
+	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20230424194318-e3860acb0473
 )
 
 // Below are the long-lived replace of the SimApp
@@ -211,7 +211,7 @@ replace (
 	// use cosmos fork of keyring
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 	// Simapp always use the latest version of the cosmos-sdk
-	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230423204932-f0018246f107
+	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230424194318-e3860acb0473
 	// Fix upstream GHSA-h395-qcrw-5vmq vulnerability.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.8.1
