@@ -196,17 +196,18 @@ require (
 // Replace here are pending PRs, or version to be tagged
 replace (
 	// TODO tag all extracted modules after SDK refactor
-	cosmossdk.io/api => cosmossdk.io/api v0.4.2-0.20230501194759-665d1b4345c6
-	cosmossdk.io/client/v2 => cosmossdk.io/client/v2 v2.0.0-20230501194759-665d1b4345c6
-	cosmossdk.io/store => cosmossdk.io/store v0.1.0-alpha.1.0.20230501194759-665d1b4345c6
-	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20230501194759-665d1b4345c6
-	cosmossdk.io/tools/rosetta => cosmossdk.io/tools/rosetta v0.2.1-0.20230501194759-665d1b4345c6
-	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20230501194759-665d1b4345c6
-	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20230501194759-665d1b4345c6
-	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20230501194759-665d1b4345c6
+	cosmossdk.io/api => cosmossdk.io/api v0.4.2-0.20230502200119-672b1f9e15d0
+	cosmossdk.io/client/v2 => cosmossdk.io/client/v2 v2.0.0-20230502200119-672b1f9e15d0
+	cosmossdk.io/core => cosmossdk.io/core v0.6.2-0.20230502200119-672b1f9e15d0
+	cosmossdk.io/store => cosmossdk.io/store v0.1.0-alpha.1.0.20230502200119-672b1f9e15d0
+	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20230502200119-672b1f9e15d0
+	cosmossdk.io/tools/rosetta => cosmossdk.io/tools/rosetta v0.2.1-0.20230502200119-672b1f9e15d0
+	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20230502200119-672b1f9e15d0
+	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20230502200119-672b1f9e15d0
+	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20230502200119-672b1f9e15d0
 	// TODO: remove after release 0.6.2
-	cosmossdk.io/x/tx => cosmossdk.io/x/tx v0.6.2-0.20230501194759-665d1b4345c6
-	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20230501194759-665d1b4345c6
+	cosmossdk.io/x/tx => cosmossdk.io/x/tx v0.6.2-0.20230502200119-672b1f9e15d0
+	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20230502200119-672b1f9e15d0
 )
 
 // Below are the long-lived replace of the SimApp
@@ -214,7 +215,7 @@ replace (
 	// use cosmos fork of keyring
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 	// Simapp always use the latest version of the cosmos-sdk
-	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230501194759-665d1b4345c6
+	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230502200119-672b1f9e15d0
 	// Fix upstream GHSA-h395-qcrw-5vmq vulnerability.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.8.1
