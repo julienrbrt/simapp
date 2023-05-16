@@ -17,6 +17,10 @@ build:
 init:
 	$(PWD)/scripts/init.sh $(version)
 
+run:
+	@cd app/$(version); \
+	./simapp-$(version) start --home ./.simapp
+
 faucet:
 	@cd faucet && npm install;
 
