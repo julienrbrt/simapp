@@ -30,7 +30,7 @@ rm -rf $SIMD_HOME || true
 if [ $1 == "v047" ]; then
   $SIMD_BIN config chain-id $CHAIN_ID --home $SIMD_HOME
   $SIMD_BIN config keyring-backend test --home $SIMD_HOME
-elif
+else
   $SIMD_BIN config set client chain-id $CHAIN_ID --home $SIMD_HOME
   $SIMD_BIN config set client keyring-backend test --home $SIMD_HOME
 fi
