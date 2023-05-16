@@ -27,8 +27,13 @@ fi
 
 # configure simapp
 rm -rf $SIMD_HOME || true
-$SIMD_BIN config chain-id $CHAIN_ID --home $SIMD_HOME
-$SIMD_BIN config keyring-backend test --home $SIMD_HOME
+if [ $1 == "v047" ]; then
+  $SIMD_BIN config chain-id $CHAIN_ID --home $SIMD_HOME
+  $SIMD_BIN config keyring-backend test --home $SIMD_HOME
+elif
+  $SIMD_BIN config set client chain-id $CHAIN_ID --home $SIMD_HOME
+  $SIMD_BIN config set client keyring-backend test --home $SIMD_HOME
+fi
 # add keys
 if [[ -z $ROOT_MNEMONIC ]]; then
     $SIMD_BIN keys add root --home $SIMD_HOME
