@@ -152,7 +152,7 @@ require (
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/prometheus/client_golang v1.15.1 // indirect
 	github.com/prometheus/client_model v0.4.0 // indirect
-	github.com/prometheus/common v0.43.0 // indirect
+	github.com/prometheus/common v0.44.0 // indirect
 	github.com/prometheus/procfs v0.9.0 // indirect
 	github.com/rcrowley/go-metrics v0.0.0-20201227073835-cf1acfcdf475 // indirect
 	github.com/rogpeppe/go-internal v1.10.0 // indirect
@@ -174,7 +174,7 @@ require (
 	golang.org/x/crypto v0.9.0 // indirect
 	golang.org/x/exp v0.0.0-20230515195305-f3d0a9c9a5cc // indirect
 	golang.org/x/net v0.10.0 // indirect
-	golang.org/x/oauth2 v0.7.0 // indirect
+	golang.org/x/oauth2 v0.8.0 // indirect
 	golang.org/x/sync v0.2.0 // indirect
 	golang.org/x/sys v0.8.0 // indirect
 	golang.org/x/term v0.8.0 // indirect
@@ -197,20 +197,20 @@ require (
 // Replace here are pending PRs, or version to be tagged
 replace (
 	// TODO tag all extracted modules after SDK refactor
-	cosmossdk.io/api => cosmossdk.io/api v0.4.2-0.20230522195124-284326116163
-	cosmossdk.io/client/v2 => cosmossdk.io/client/v2 v2.0.0-20230522195124-284326116163
+	cosmossdk.io/api => cosmossdk.io/api v0.4.2-0.20230524000559-a2e3711ce09f
+	cosmossdk.io/client/v2 => cosmossdk.io/client/v2 v2.0.0-20230524000559-a2e3711ce09f
 	// TODO: remove me after collections 0.2. is released.
-	cosmossdk.io/collections => cosmossdk.io/collections v0.0.0-20230522195124-284326116163
-	cosmossdk.io/store => cosmossdk.io/store v0.1.0-alpha.1.0.20230522195124-284326116163
-	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20230522195124-284326116163
-	cosmossdk.io/tools/rosetta => cosmossdk.io/tools/rosetta v0.2.1-0.20230522195124-284326116163
-	cosmossdk.io/x/circuit => cosmossdk.io/x/circuit v0.0.0-20230522195124-284326116163
-	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20230522195124-284326116163
-	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20230522195124-284326116163
-	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20230522195124-284326116163
+	cosmossdk.io/collections => cosmossdk.io/collections v0.0.0-20230524000559-a2e3711ce09f
+	cosmossdk.io/store => cosmossdk.io/store v0.1.0-alpha.1.0.20230524000559-a2e3711ce09f
+	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20230524000559-a2e3711ce09f
+	cosmossdk.io/tools/rosetta => cosmossdk.io/tools/rosetta v0.2.1-0.20230524000559-a2e3711ce09f
+	cosmossdk.io/x/circuit => cosmossdk.io/x/circuit v0.0.0-20230524000559-a2e3711ce09f
+	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20230524000559-a2e3711ce09f
+	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20230524000559-a2e3711ce09f
+	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20230524000559-a2e3711ce09f
 	// TODO: remove after 0.7.0 release
-	cosmossdk.io/x/tx => cosmossdk.io/x/tx v0.7.1-0.20230522195124-284326116163
-	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20230522195124-284326116163
+	cosmossdk.io/x/tx => cosmossdk.io/x/tx v0.7.1-0.20230524000559-a2e3711ce09f
+	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20230524000559-a2e3711ce09f
 )
 
 // Below are the long-lived replace of the SimApp
@@ -218,7 +218,7 @@ replace (
 	// use cosmos fork of keyring
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 	// Simapp always use the latest version of the cosmos-sdk
-	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230522195124-284326116163
+	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230524000559-a2e3711ce09f
 	// Fix upstream GHSA-h395-qcrw-5vmq and GHSA-3vp4-m3rf-835h vulnerabilities.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.9.0
