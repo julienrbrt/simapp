@@ -142,7 +142,7 @@ require (
 	github.com/mtibben/percent v0.2.1 // indirect
 	github.com/oasisprotocol/curve25519-voi v0.0.0-20230110094441-db37f07504ce // indirect
 	github.com/oklog/run v1.1.0 // indirect
-	github.com/pelletier/go-toml/v2 v2.0.7 // indirect
+	github.com/pelletier/go-toml/v2 v2.0.8 // indirect
 	github.com/petermattis/goid v0.0.0-20230518223814-80aa455d8761 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
@@ -193,19 +193,19 @@ require (
 // Replace here are pending PRs, or version to be tagged
 replace (
 	// TODO tag all extracted modules after SDK refactor
-	cosmossdk.io/api => cosmossdk.io/api v0.4.2-0.20230524233625-533ee7a552f7
-	cosmossdk.io/client/v2 => cosmossdk.io/client/v2 v2.0.0-20230524233625-533ee7a552f7
-	cosmossdk.io/collections => cosmossdk.io/collections v0.0.0-20230524233625-533ee7a552f7
-	cosmossdk.io/core => cosmossdk.io/core v0.7.1-0.20230524233625-533ee7a552f7
-	cosmossdk.io/store => cosmossdk.io/store v0.1.0-alpha.1.0.20230524233625-533ee7a552f7
-	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20230524233625-533ee7a552f7
-	cosmossdk.io/tools/rosetta => cosmossdk.io/tools/rosetta v0.2.1-0.20230524233625-533ee7a552f7
-	cosmossdk.io/x/circuit => cosmossdk.io/x/circuit v0.0.0-20230524233625-533ee7a552f7
-	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20230524233625-533ee7a552f7
-	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20230524233625-533ee7a552f7
-	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20230524233625-533ee7a552f7
-	cosmossdk.io/x/tx => cosmossdk.io/x/tx v0.7.1-0.20230524233625-533ee7a552f7
-	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20230524233625-533ee7a552f7
+	cosmossdk.io/api => cosmossdk.io/api v0.4.2-0.20230525183509-82659a7477ab
+	cosmossdk.io/client/v2 => cosmossdk.io/client/v2 v2.0.0-20230525183509-82659a7477ab
+	cosmossdk.io/collections => cosmossdk.io/collections v0.0.0-20230525183509-82659a7477ab
+	cosmossdk.io/core => cosmossdk.io/core v0.7.1-0.20230525183509-82659a7477ab
+	cosmossdk.io/store => cosmossdk.io/store v0.1.0-alpha.1.0.20230525183509-82659a7477ab
+	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20230525183509-82659a7477ab
+	cosmossdk.io/tools/rosetta => cosmossdk.io/tools/rosetta v0.2.1-0.20230525183509-82659a7477ab
+	cosmossdk.io/x/circuit => cosmossdk.io/x/circuit v0.0.0-20230525183509-82659a7477ab
+	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20230525183509-82659a7477ab
+	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20230525183509-82659a7477ab
+	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20230525183509-82659a7477ab
+	cosmossdk.io/x/tx => cosmossdk.io/x/tx v0.7.1-0.20230525183509-82659a7477ab
+	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20230525183509-82659a7477ab
 )
 
 // Below are the long-lived replace of the SimApp
@@ -213,7 +213,7 @@ replace (
 	// use cosmos fork of keyring
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 	// Simapp always use the latest version of the cosmos-sdk
-	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230524233625-533ee7a552f7
+	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230525183509-82659a7477ab
 	// Fix upstream GHSA-h395-qcrw-5vmq and GHSA-3vp4-m3rf-835h vulnerabilities.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.9.0
