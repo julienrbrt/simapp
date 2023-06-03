@@ -112,7 +112,7 @@ require (
 	github.com/hashicorp/go-getter v1.7.1 // indirect
 	github.com/hashicorp/go-hclog v1.5.0 // indirect
 	github.com/hashicorp/go-immutable-radix v1.3.1 // indirect
-	github.com/hashicorp/go-plugin v1.4.9 // indirect
+	github.com/hashicorp/go-plugin v1.4.10 // indirect
 	github.com/hashicorp/go-safetemp v1.0.0 // indirect
 	github.com/hashicorp/go-version v1.6.0 // indirect
 	github.com/hashicorp/golang-lru v0.5.5-0.20210104140557-80c98217689d // indirect
@@ -179,7 +179,9 @@ require (
 	golang.org/x/xerrors v0.0.0-20220907171357-04be3eba64a2 // indirect
 	google.golang.org/api v0.122.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
-	google.golang.org/genproto v0.0.0-20230524185152-1884fd1fac28 // indirect
+	google.golang.org/genproto v0.0.0-20230525234025-438c736192d0 // indirect
+	google.golang.org/genproto/googleapis/api v0.0.0-20230525234020-1aefcd67740a // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20230530153820-e85fd2cbaebc // indirect
 	google.golang.org/grpc v1.55.0 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
@@ -194,18 +196,18 @@ require (
 // Replace here are pending PRs, or version to be tagged
 replace (
 	// TODO tag all extracted modules after SDK refactor
-	cosmossdk.io/client/v2 => cosmossdk.io/client/v2 v2.0.0-20230601140551-b3c4e1556a1b
-	cosmossdk.io/collections => cosmossdk.io/collections v0.0.0-20230601140551-b3c4e1556a1b
-	cosmossdk.io/core => cosmossdk.io/core v0.7.1-0.20230601140551-b3c4e1556a1b
-	cosmossdk.io/store => cosmossdk.io/store v0.1.0-alpha.1.0.20230601140551-b3c4e1556a1b
-	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20230601140551-b3c4e1556a1b
-	cosmossdk.io/tools/rosetta => cosmossdk.io/tools/rosetta v0.2.1-0.20230601140551-b3c4e1556a1b
-	cosmossdk.io/x/circuit => cosmossdk.io/x/circuit v0.0.0-20230601140551-b3c4e1556a1b
-	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20230601140551-b3c4e1556a1b
-	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20230601140551-b3c4e1556a1b
-	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20230601140551-b3c4e1556a1b
-	cosmossdk.io/x/tx => cosmossdk.io/x/tx v0.7.1-0.20230601140551-b3c4e1556a1b
-	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20230601140551-b3c4e1556a1b
+	cosmossdk.io/client/v2 => cosmossdk.io/client/v2 v2.0.0-20230602172544-0246ee171325
+	cosmossdk.io/collections => cosmossdk.io/collections v0.0.0-20230602172544-0246ee171325
+	cosmossdk.io/core => cosmossdk.io/core v0.7.1-0.20230602172544-0246ee171325
+	cosmossdk.io/store => cosmossdk.io/store v0.1.0-alpha.1.0.20230602172544-0246ee171325
+	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20230602172544-0246ee171325
+	cosmossdk.io/tools/rosetta => cosmossdk.io/tools/rosetta v0.2.1-0.20230602172544-0246ee171325
+	cosmossdk.io/x/circuit => cosmossdk.io/x/circuit v0.0.0-20230602172544-0246ee171325
+	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20230602172544-0246ee171325
+	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20230602172544-0246ee171325
+	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20230602172544-0246ee171325
+	cosmossdk.io/x/tx => cosmossdk.io/x/tx v0.7.1-0.20230602172544-0246ee171325
+	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20230602172544-0246ee171325
 )
 
 // Below are the long-lived replace of the SimApp
@@ -213,10 +215,10 @@ replace (
 	// use cosmos fork of keyring
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 	// Simapp always use the latest version of the cosmos-sdk
-	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230601140551-b3c4e1556a1b
+	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230602172544-0246ee171325
 	// Fix upstream GHSA-h395-qcrw-5vmq and GHSA-3vp4-m3rf-835h vulnerabilities.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.9.0
-	// Downgraded to avoid bugs in following commits which caused simulations to fail.
+	// replace broken goleveldb
 	github.com/syndtr/goleveldb => github.com/syndtr/goleveldb v1.0.1-0.20210819022825-2ae1ddf74ef7
 )
