@@ -8,6 +8,7 @@ It provides instances that can be used for testing and development purpose.
 | Endpoint / Faucet                                    | RPC (port) | gRPC (port) | gRPC-web (port) | gRPC-gateway (port) |
 | ---------------------------------------------------- | ---------- | ----------- | --------------- | ------------------- |
 | [https://next.simapp.zone](https://next.simapp.zone) | 26657      | 9090        | 1317            | 1317                |
+| [https://v050.simapp.zone](https://v050.simapp.zone) | 26657      | 9090        | 1317            | 1317                |
 | [https://v047.simapp.zone](https://v047.simapp.zone) | 26657      | 9090        | 9091            | 1317                |
 
 An explorer is available at [`explorer.simapp.zone`](https://explorer.simapp.zone).
@@ -19,6 +20,7 @@ The nodes binaries are updated daily on the nodes to the latest commited version
 | Name (binary) | Version               | Source                                                                           |
 | ------------- | --------------------- | -------------------------------------------------------------------------------- |
 | `simapp-next` | `next` (a.k.a `main`) | [simapp@main](https://github.com/cosmos/cosmos-sdk/tree/main/simapp)             |
+| `simapp-v050` | `v0.50`               | [simapp@v0.50](https://github.com/cosmos/cosmos-sdk/tree/release/v0.47.x/simapp) |
 | `simapp-v047` | `v0.47`               | [simapp@v0.47](https://github.com/cosmos/cosmos-sdk/tree/release/v0.47.x/simapp) |
 
 ## Use locally
@@ -26,8 +28,8 @@ The nodes binaries are updated daily on the nodes to the latest commited version
 To replicate `simapp.zone` configuration, use the `make init` command, using the simapp version argument.
 
 ```sh
-make build version={next|v047}
-make init version={next|v047}
+make build version={next|v050|v047}
+make init version={next|v050|v047}
 ```
 
 ## Useful links
