@@ -18,6 +18,12 @@ jobs:
           cd app/next
           go mod tidy
           go test -v ./...
+      - name: Test v050
+        if: always()
+        run: |
+          cd app/v050
+          go mod tidy
+          go test -v ./...
       - name: Test v047
         if: always()
         run: |
