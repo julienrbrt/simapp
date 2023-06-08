@@ -20,7 +20,7 @@ The nodes binaries are updated daily on the nodes to the latest commited version
 | Name (binary) | Version               | Source                                                                           |
 | ------------- | --------------------- | -------------------------------------------------------------------------------- |
 | `simapp-next` | `next` (a.k.a `main`) | [simapp@main](https://github.com/cosmos/cosmos-sdk/tree/main/simapp)             |
-| `simapp-v050` | `v0.50`               | [simapp@v0.50](https://github.com/cosmos/cosmos-sdk/tree/release/v0.47.x/simapp) |
+| `simapp-v050` | `v0.50`               | [simapp@v0.50](https://github.com/cosmos/cosmos-sdk/tree/release/v0.50.x/simapp) |
 | `simapp-v047` | `v0.47`               | [simapp@v0.47](https://github.com/cosmos/cosmos-sdk/tree/release/v0.47.x/simapp) |
 
 ## Use locally
