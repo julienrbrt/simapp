@@ -56,10 +56,10 @@ require (
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
 	github.com/chzyer/readline v1.5.1 // indirect
 	github.com/cockroachdb/apd/v2 v2.0.2 // indirect
-	github.com/cockroachdb/errors v1.9.1 // indirect
+	github.com/cockroachdb/errors v1.10.0 // indirect
 	github.com/cockroachdb/logtags v0.0.0-20230118201751-21c54148d20b // indirect
 	github.com/cockroachdb/pebble v0.0.0-20230606202032-d96868fd481e // indirect
-	github.com/cockroachdb/redact v1.1.4 // indirect
+	github.com/cockroachdb/redact v1.1.5 // indirect
 	github.com/coinbase/rosetta-sdk-go/types v1.0.0 // indirect
 	github.com/cometbft/cometbft-db v0.7.0 // indirect
 	github.com/cosmos/btcutil v1.0.5 // indirect
@@ -169,14 +169,14 @@ require (
 	github.com/zondax/ledger-go v0.14.1 // indirect
 	go.etcd.io/bbolt v1.3.7 // indirect
 	go.opencensus.io v0.24.0 // indirect
-	golang.org/x/crypto v0.9.0 // indirect
+	golang.org/x/crypto v0.10.0 // indirect
 	golang.org/x/exp v0.0.0-20230522175609-2e198f4a06a1 // indirect
 	golang.org/x/net v0.10.0 // indirect
 	golang.org/x/oauth2 v0.8.0 // indirect
 	golang.org/x/sync v0.2.0 // indirect
-	golang.org/x/sys v0.8.0 // indirect
-	golang.org/x/term v0.8.0 // indirect
-	golang.org/x/text v0.9.0 // indirect
+	golang.org/x/sys v0.9.0 // indirect
+	golang.org/x/term v0.9.0 // indirect
+	golang.org/x/text v0.10.0 // indirect
 	golang.org/x/xerrors v0.0.0-20220907171357-04be3eba64a2 // indirect
 	google.golang.org/api v0.122.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
@@ -189,22 +189,22 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	gotest.tools/v3 v3.4.0 // indirect
 	nhooyr.io/websocket v1.8.6 // indirect
-	pgregory.net/rapid v0.7.1 // indirect
+	pgregory.net/rapid v1.0.0 // indirect
 	sigs.k8s.io/yaml v1.3.0 // indirect
 )
 
 // Here are the short-lived replace from the SimApp
 // Replace here are pending PRs, or version to be tagged
 replace (
-	cosmossdk.io/client/v2 => cosmossdk.io/client/v2 v2.0.0-20230612154926-bafe5040f22c
-	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20230612154926-bafe5040f22c
-	cosmossdk.io/tools/rosetta => cosmossdk.io/tools/rosetta v0.2.1-0.20230612154926-bafe5040f22c
-	cosmossdk.io/x/circuit => cosmossdk.io/x/circuit v0.0.0-20230612154926-bafe5040f22c
-	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20230612154926-bafe5040f22c
-	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20230612154926-bafe5040f22c
-	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20230612154926-bafe5040f22c
-	cosmossdk.io/x/tx => cosmossdk.io/x/tx v0.8.1-0.20230612154926-bafe5040f22c
-	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20230612154926-bafe5040f22c
+	cosmossdk.io/client/v2 => cosmossdk.io/client/v2 v2.0.0-20230613201620-bbb452f60968
+	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20230613201620-bbb452f60968
+	cosmossdk.io/tools/rosetta => cosmossdk.io/tools/rosetta v0.2.1-0.20230613201620-bbb452f60968
+	cosmossdk.io/x/circuit => cosmossdk.io/x/circuit v0.0.0-20230613201620-bbb452f60968
+	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20230613201620-bbb452f60968
+	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20230613201620-bbb452f60968
+	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20230613201620-bbb452f60968
+	cosmossdk.io/x/tx => cosmossdk.io/x/tx v0.8.1-0.20230613201620-bbb452f60968
+	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20230613201620-bbb452f60968
 )
 
 // Below are the long-lived replace of the SimApp
@@ -212,7 +212,7 @@ replace (
 	// use cosmos fork of keyring
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 	// Simapp always use the latest version of the cosmos-sdk
-	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230612154926-bafe5040f22c
+	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230613201620-bbb452f60968
 	// Fix upstream GHSA-h395-qcrw-5vmq and GHSA-3vp4-m3rf-835h vulnerabilities.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.9.0
