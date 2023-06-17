@@ -34,7 +34,7 @@ require (
 
 require (
 	cloud.google.com/go v0.110.0 // indirect
-	cloud.google.com/go/compute v1.19.0 // indirect
+	cloud.google.com/go/compute v1.19.1 // indirect
 	cloud.google.com/go/compute/metadata v0.2.3 // indirect
 	cloud.google.com/go/iam v0.13.0 // indirect
 	cloud.google.com/go/storage v1.30.0 // indirect
@@ -148,7 +148,7 @@ require (
 	github.com/petermattis/goid v0.0.0-20230518223814-80aa455d8761 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
-	github.com/prometheus/client_golang v1.15.1 // indirect
+	github.com/prometheus/client_golang v1.16.0 // indirect
 	github.com/prometheus/client_model v0.4.0 // indirect
 	github.com/prometheus/common v0.44.0 // indirect
 	github.com/prometheus/procfs v0.10.1 // indirect
@@ -171,7 +171,7 @@ require (
 	go.opencensus.io v0.24.0 // indirect
 	golang.org/x/crypto v0.10.0 // indirect
 	golang.org/x/exp v0.0.0-20230522175609-2e198f4a06a1 // indirect
-	golang.org/x/net v0.10.0 // indirect
+	golang.org/x/net v0.11.0 // indirect
 	golang.org/x/oauth2 v0.8.0 // indirect
 	golang.org/x/sync v0.3.0 // indirect
 	golang.org/x/sys v0.9.0 // indirect
@@ -183,7 +183,7 @@ require (
 	google.golang.org/genproto v0.0.0-20230525234025-438c736192d0 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20230525234020-1aefcd67740a // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20230530153820-e85fd2cbaebc // indirect
-	google.golang.org/grpc v1.55.0 // indirect
+	google.golang.org/grpc v1.56.0 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
@@ -201,14 +201,14 @@ require (
 
 // SimApp on main always tests the latest extracted SDK modules importing the sdk
 replace (
-	cosmossdk.io/client/v2 => cosmossdk.io/client/v2 v2.0.0-20230615173548-5385116abac4
-	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20230615173548-5385116abac4
-	cosmossdk.io/tools/rosetta => cosmossdk.io/tools/rosetta v0.2.1-0.20230615173548-5385116abac4
-	cosmossdk.io/x/circuit => cosmossdk.io/x/circuit v0.0.0-20230615173548-5385116abac4
-	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20230615173548-5385116abac4
-	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20230615173548-5385116abac4
-	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20230615173548-5385116abac4
-	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20230615173548-5385116abac4
+	cosmossdk.io/client/v2 => cosmossdk.io/client/v2 v2.0.0-20230616203642-c2a07cea272a
+	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20230616203642-c2a07cea272a
+	cosmossdk.io/tools/rosetta => cosmossdk.io/tools/rosetta v0.2.1-0.20230616203642-c2a07cea272a
+	cosmossdk.io/x/circuit => cosmossdk.io/x/circuit v0.0.0-20230616203642-c2a07cea272a
+	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20230616203642-c2a07cea272a
+	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20230616203642-c2a07cea272a
+	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20230616203642-c2a07cea272a
+	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20230616203642-c2a07cea272a
 )
 
 // Below are the long-lived replace of the SimApp
@@ -216,7 +216,7 @@ replace (
 	// use cosmos fork of keyring
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 	// Simapp always use the latest version of the cosmos-sdk
-	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230615173548-5385116abac4
+	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230616203642-c2a07cea272a
 	// Fix upstream GHSA-h395-qcrw-5vmq and GHSA-3vp4-m3rf-835h vulnerabilities.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.9.1
