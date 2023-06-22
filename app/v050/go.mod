@@ -13,7 +13,7 @@ require (
 	cosmossdk.io/tools/confix v0.0.0-20230614114324-f368ed5c62bc
 	cosmossdk.io/tools/rosetta v0.2.1-0.20230614114324-f368ed5c62bc
 	cosmossdk.io/x/circuit v0.0.0-20230614114324-f368ed5c62bc
-	cosmossdk.io/x/evidence v0.0.0-20230616204757-46e5f3fb0376
+	cosmossdk.io/x/evidence v0.0.0-20230621081736-53941657a96b
 	cosmossdk.io/x/feegrant v0.0.0-20230614114324-f368ed5c62bc
 	cosmossdk.io/x/nft v0.0.0-20230614114324-f368ed5c62bc
 	cosmossdk.io/x/tx v0.8.0
@@ -204,7 +204,7 @@ replace (
 	// use cosmos fork of keyring
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 	// Simapp always use the latest version of the cosmos-sdk
-	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.50.0-alpha.0.0.20230620193251-b6102fb6a88b
+	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.50.0-alpha.0.0.20230621164048-e991124b0727
 	// Fix upstream GHSA-h395-qcrw-5vmq and GHSA-3vp4-m3rf-835h vulnerabilities.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.9.1
