@@ -5,7 +5,7 @@ go 1.20
 require (
 	cosmossdk.io/api v0.4.3-0.20230615032830-feb87fce5495
 	cosmossdk.io/client/v2 v2.0.0-20230614103911-b3da8bb4e801
-	cosmossdk.io/core v0.8.0
+	cosmossdk.io/core v0.9.0
 	cosmossdk.io/depinject v1.0.0-alpha.3
 	cosmossdk.io/log v1.1.0
 	cosmossdk.io/math v1.0.1
@@ -201,14 +201,14 @@ require (
 
 // SimApp on main always tests the latest extracted SDK modules importing the sdk
 replace (
-	cosmossdk.io/client/v2 => cosmossdk.io/client/v2 v2.0.0-20230628193334-078e7cb4aeb1
-	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20230628193334-078e7cb4aeb1
-	cosmossdk.io/tools/rosetta => cosmossdk.io/tools/rosetta v0.2.1-0.20230628193334-078e7cb4aeb1
-	cosmossdk.io/x/circuit => cosmossdk.io/x/circuit v0.0.0-20230628193334-078e7cb4aeb1
-	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20230628193334-078e7cb4aeb1
-	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20230628193334-078e7cb4aeb1
-	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20230628193334-078e7cb4aeb1
-	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20230628193334-078e7cb4aeb1
+	cosmossdk.io/client/v2 => cosmossdk.io/client/v2 v2.0.0-20230629213050-620db732ba65
+	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20230629213050-620db732ba65
+	cosmossdk.io/tools/rosetta => cosmossdk.io/tools/rosetta v0.2.1-0.20230629213050-620db732ba65
+	cosmossdk.io/x/circuit => cosmossdk.io/x/circuit v0.0.0-20230629213050-620db732ba65
+	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20230629213050-620db732ba65
+	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20230629213050-620db732ba65
+	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20230629213050-620db732ba65
+	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20230629213050-620db732ba65
 )
 
 // Below are the long-lived replace of the SimApp
@@ -216,7 +216,7 @@ replace (
 	// use cosmos fork of keyring
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 	// Simapp always use the latest version of the cosmos-sdk
-	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230628193334-078e7cb4aeb1
+	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230629213050-620db732ba65
 	// Fix upstream GHSA-h395-qcrw-5vmq and GHSA-3vp4-m3rf-835h vulnerabilities.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.9.1

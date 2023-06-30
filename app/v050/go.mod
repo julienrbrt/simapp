@@ -5,7 +5,7 @@ go 1.20
 require (
 	cosmossdk.io/api v0.4.3-0.20230620040119-e078f1a49e8b
 	cosmossdk.io/client/v2 v2.0.0-20230614103911-b3da8bb4e801
-	cosmossdk.io/core v0.8.0
+	cosmossdk.io/core v0.9.0
 	cosmossdk.io/depinject v1.0.0-alpha.3
 	cosmossdk.io/log v1.1.0
 	cosmossdk.io/math v1.0.1
@@ -29,7 +29,7 @@ require (
 	github.com/spf13/pflag v1.0.5
 	github.com/spf13/viper v1.16.0
 	github.com/stretchr/testify v1.8.4
-	google.golang.org/protobuf v1.30.0
+	google.golang.org/protobuf v1.31.0
 )
 
 require (
@@ -183,7 +183,7 @@ require (
 	google.golang.org/genproto v0.0.0-20230525234025-438c736192d0 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20230525234020-1aefcd67740a // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20230530153820-e85fd2cbaebc // indirect
-	google.golang.org/grpc v1.56.0 // indirect
+	google.golang.org/grpc v1.56.1 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
@@ -204,7 +204,7 @@ replace (
 	// use cosmos fork of keyring
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 	// Simapp always use the latest version of the cosmos-sdk
-	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.50.0-alpha.0.0.20230628203004-730a352b0abe
+	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.50.0-alpha.0.0.20230629151233-7a1e2cad324b
 	// Fix upstream GHSA-h395-qcrw-5vmq and GHSA-3vp4-m3rf-835h vulnerabilities.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.9.1
