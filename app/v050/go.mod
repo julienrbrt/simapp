@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	cosmossdk.io/api v0.5.0
-	cosmossdk.io/client/v2 v2.0.0-20230630152705-9f4a4e416f85
+	cosmossdk.io/client/v2 v2.0.0-20230706173432-bc5eb31751de
 	cosmossdk.io/core v0.9.0
 	cosmossdk.io/depinject v1.0.0-alpha.3
 	cosmossdk.io/log v1.1.1-0.20230704160919-88f2c830b0ca
@@ -206,7 +206,7 @@ replace (
 	// use cosmos fork of keyring
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 	// Simapp always use the latest version of the cosmos-sdk
-	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.50.0-alpha.1.0.20230705153108-73aa87215522
+	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.50.0-alpha.1.0.20230706221939-d6780c1094e2
 	// Fix upstream GHSA-h395-qcrw-5vmq and GHSA-3vp4-m3rf-835h vulnerabilities.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.9.1
