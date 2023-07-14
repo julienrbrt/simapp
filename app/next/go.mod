@@ -3,7 +3,7 @@ module cosmossdk.io/simapp
 go 1.20
 
 require (
-	cosmossdk.io/api v0.5.0
+	cosmossdk.io/api v0.6.0
 	cosmossdk.io/client/v2 v2.0.0-20230630094428-02b760776860
 	cosmossdk.io/core v0.9.0
 	cosmossdk.io/depinject v1.0.0-alpha.3
@@ -16,7 +16,7 @@ require (
 	cosmossdk.io/x/evidence v0.0.0-20230613133644-0a778132a60f
 	cosmossdk.io/x/feegrant v0.0.0-20230613133644-0a778132a60f
 	cosmossdk.io/x/nft v0.0.0-20230613133644-0a778132a60f
-	cosmossdk.io/x/tx v0.8.0
+	cosmossdk.io/x/tx v0.9.1
 	cosmossdk.io/x/upgrade v0.0.0-20230613133644-0a778132a60f
 	github.com/cometbft/cometbft v0.38.0-rc2
 	github.com/cosmos/cosmos-db v1.0.0
@@ -122,7 +122,7 @@ require (
 	github.com/hashicorp/yamux v0.1.1 // indirect
 	github.com/hdevalence/ed25519consensus v0.1.0 // indirect
 	github.com/huandu/skiplist v1.2.0 // indirect
-	github.com/iancoleman/strcase v0.2.0 // indirect
+	github.com/iancoleman/strcase v0.3.0 // indirect
 	github.com/improbable-eng/grpc-web v0.15.0 // indirect
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/jmespath/go-jmespath v0.4.0 // indirect
@@ -202,14 +202,14 @@ require (
 
 // SimApp on main always tests the latest extracted SDK modules importing the sdk
 replace (
-	cosmossdk.io/client/v2 => cosmossdk.io/client/v2 v2.0.0-20230712221628-bc4ccab74b1a
-	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20230712221628-bc4ccab74b1a
-	cosmossdk.io/tools/rosetta => cosmossdk.io/tools/rosetta v0.2.1-0.20230712221628-bc4ccab74b1a
-	cosmossdk.io/x/circuit => cosmossdk.io/x/circuit v0.0.0-20230712221628-bc4ccab74b1a
-	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20230712221628-bc4ccab74b1a
-	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20230712221628-bc4ccab74b1a
-	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20230712221628-bc4ccab74b1a
-	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20230712221628-bc4ccab74b1a
+	cosmossdk.io/client/v2 => cosmossdk.io/client/v2 v2.0.0-20230713190037-6a0ab4fd167f
+	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20230713190037-6a0ab4fd167f
+	cosmossdk.io/tools/rosetta => cosmossdk.io/tools/rosetta v0.2.1-0.20230713190037-6a0ab4fd167f
+	cosmossdk.io/x/circuit => cosmossdk.io/x/circuit v0.0.0-20230713190037-6a0ab4fd167f
+	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20230713190037-6a0ab4fd167f
+	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20230713190037-6a0ab4fd167f
+	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20230713190037-6a0ab4fd167f
+	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20230713190037-6a0ab4fd167f
 )
 
 // Below are the long-lived replace of the SimApp
@@ -217,7 +217,7 @@ replace (
 	// use cosmos fork of keyring
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 	// Simapp always use the latest version of the cosmos-sdk
-	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230712221628-bc4ccab74b1a
+	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230713190037-6a0ab4fd167f
 	// Fix upstream GHSA-h395-qcrw-5vmq and GHSA-3vp4-m3rf-835h vulnerabilities.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.9.1
