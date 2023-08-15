@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	cosmossdk.io/api v0.7.0
-	cosmossdk.io/client/v2 v2.0.0-20230725211428-f28adc7c9e83
+	cosmossdk.io/client/v2 v2.0.0-20230814141159-7b791eefdcdc
 	cosmossdk.io/core v0.9.0
 	cosmossdk.io/depinject v1.0.0-alpha.4
 	cosmossdk.io/log v1.2.0
@@ -12,7 +12,7 @@ require (
 	cosmossdk.io/store v1.0.0-alpha.1.0.20230728080422-54ed7dab3982
 	cosmossdk.io/tools/confix v0.0.0-20230719143845-dff6b0e26aa4
 	cosmossdk.io/x/circuit v0.0.0-20230719143845-dff6b0e26aa4
-	cosmossdk.io/x/evidence v0.0.0-20230719143845-dff6b0e26aa4
+	cosmossdk.io/x/evidence v0.0.0-20230814085951-3dca9f8a5a18
 	cosmossdk.io/x/feegrant v0.0.0-20230719143845-dff6b0e26aa4
 	cosmossdk.io/x/nft v0.0.0-20230719143845-dff6b0e26aa4
 	cosmossdk.io/x/tx v0.9.1
@@ -187,7 +187,7 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	gotest.tools/v3 v3.5.0 // indirect
 	nhooyr.io/websocket v1.8.6 // indirect
-	pgregory.net/rapid v1.0.0 // indirect
+	pgregory.net/rapid v1.0.1 // indirect
 	sigs.k8s.io/yaml v1.3.0 // indirect
 )
 
@@ -202,7 +202,7 @@ replace (
 	// use cosmos fork of keyring
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 	// Simapp always use the latest version of the cosmos-sdk
-	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.50.0-beta.0.0.20230813132910-3a96bb9f7f14
+	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.50.0-beta.0.0.20230814150656-e76102f885b7
 	// Fix upstream GHSA-h395-qcrw-5vmq and GHSA-3vp4-m3rf-835h vulnerabilities.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.9.1
