@@ -143,7 +143,7 @@ require (
 	github.com/mtibben/percent v0.2.1 // indirect
 	github.com/oasisprotocol/curve25519-voi v0.0.0-20230110094441-db37f07504ce // indirect
 	github.com/oklog/run v1.1.0 // indirect
-	github.com/pelletier/go-toml/v2 v2.0.9 // indirect
+	github.com/pelletier/go-toml/v2 v2.1.0 // indirect
 	github.com/petermattis/goid v0.0.0-20230808133559-b036b712a89b // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
@@ -179,7 +179,7 @@ require (
 	google.golang.org/api v0.134.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
 	google.golang.org/genproto v0.0.0-20230913181813-007df8e322eb // indirect
-	google.golang.org/genproto/googleapis/api v0.0.0-20230822172742-b8732ec3820d // indirect
+	google.golang.org/genproto/googleapis/api v0.0.0-20230913181813-007df8e322eb // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20230920204549-e6e6cdab5c13 // indirect
 	google.golang.org/grpc v1.58.2 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
@@ -199,22 +199,23 @@ require (
 
 // SimApp on main always tests the latest extracted SDK modules importing the sdk
 replace (
-	cosmossdk.io/client/v2 => cosmossdk.io/client/v2 v2.0.0-20231002192308-ae61dce700e5
-	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20231002192308-ae61dce700e5
-	cosmossdk.io/x/circuit => cosmossdk.io/x/circuit v0.0.0-20231002192308-ae61dce700e5
-	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20231002192308-ae61dce700e5
-	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20231002192308-ae61dce700e5
-	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20231002192308-ae61dce700e5
-	cosmossdk.io/x/protocolpool => cosmossdk.io/x/protocolpool v0.0.0-20231002192308-ae61dce700e5
-	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20231002192308-ae61dce700e5
+	cosmossdk.io/client/v2 => cosmossdk.io/client/v2 v2.0.0-20231003183331-f0d6e7717351
+	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20231003183331-f0d6e7717351
+	cosmossdk.io/x/circuit => cosmossdk.io/x/circuit v0.0.0-20231003183331-f0d6e7717351
+	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20231003183331-f0d6e7717351
+	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20231003183331-f0d6e7717351
+	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20231003183331-f0d6e7717351
+	cosmossdk.io/x/protocolpool => cosmossdk.io/x/protocolpool v0.0.0-20231003183331-f0d6e7717351
+	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20231003183331-f0d6e7717351
 )
 
 // Below are the long-lived replace of the SimApp
 replace (
+	cosmossdk.io/x/params => cosmossdk.io/x/params v0.0.0-20231003183331-f0d6e7717351
 	// use cosmos fork of keyring
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 	// Simapp always use the latest version of the cosmos-sdk
-	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20231002192308-ae61dce700e5
+	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20231003183331-f0d6e7717351
 	// Fix upstream GHSA-h395-qcrw-5vmq and GHSA-3vp4-m3rf-835h vulnerabilities.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.9.1
