@@ -12,10 +12,10 @@ require (
 	cosmossdk.io/math v1.1.3-rc.1
 	cosmossdk.io/store v1.0.0-rc.0
 	cosmossdk.io/tools/confix v0.0.0-20230925151519-64e0e8980834
-	cosmossdk.io/x/circuit v0.0.0-20230925151519-64e0e8980834
+	cosmossdk.io/x/circuit v0.0.0-20231006095526-33390754f9fe
 	cosmossdk.io/x/evidence v0.0.0-20230925151519-64e0e8980834
 	cosmossdk.io/x/feegrant v0.0.0-20230925151519-64e0e8980834
-	cosmossdk.io/x/nft v0.0.0-20230925151519-64e0e8980834
+	cosmossdk.io/x/nft v0.0.0-20231006095526-33390754f9fe
 	cosmossdk.io/x/tx v0.10.1-0.20230920120022-6715b5afb59f
 	cosmossdk.io/x/upgrade v0.0.0-20230925151519-64e0e8980834
 	github.com/cometbft/cometbft v0.38.0
@@ -201,7 +201,7 @@ replace (
 	// use cosmos fork of keyring
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 	// Simapp always use the latest version of the cosmos-sdk
-	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.50.0-rc.1.0.20231005185602-53d228f4eb4f
+	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.50.0-rc.1.0.20231006191205-5d73a8e90c46
 	// Fix upstream GHSA-h395-qcrw-5vmq and GHSA-3vp4-m3rf-835h vulnerabilities.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.9.1
