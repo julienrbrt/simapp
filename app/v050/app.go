@@ -33,6 +33,9 @@ import (
 	upgradetypes "cosmossdk.io/x/upgrade/types"
 	abci "github.com/cometbft/cometbft/abci/types"
 	dbm "github.com/cosmos/cosmos-db"
+	"github.com/cosmos/gogoproto/proto"
+	"github.com/spf13/cast"
+
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"
@@ -52,6 +55,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
 	"github.com/cosmos/cosmos-sdk/types/msgservice"
+	sigtypes "github.com/cosmos/cosmos-sdk/types/tx/signing"
 	"github.com/cosmos/cosmos-sdk/version"
 	"github.com/cosmos/cosmos-sdk/x/auth"
 	"github.com/cosmos/cosmos-sdk/x/auth/ante"
@@ -61,6 +65,7 @@ import (
 	authsims "github.com/cosmos/cosmos-sdk/x/auth/simulation"
 	"github.com/cosmos/cosmos-sdk/x/auth/tx"
 	authtx "github.com/cosmos/cosmos-sdk/x/auth/tx"
+	txmodule "github.com/cosmos/cosmos-sdk/x/auth/tx/config"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 	"github.com/cosmos/cosmos-sdk/x/auth/vesting"
 	vestingtypes "github.com/cosmos/cosmos-sdk/x/auth/vesting/types"
@@ -103,8 +108,6 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/staking"
 	stakingkeeper "github.com/cosmos/cosmos-sdk/x/staking/keeper"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
-	"github.com/cosmos/gogoproto/proto"
-	"github.com/spf13/cast"
 )
 
 const appName = "SimApp"
@@ -146,7 +149,7 @@ type SimApp struct {
 
 	// keepers
 	AccountKeeper         authkeeper.AccountKeeper
-	BankKeeper            bankkeeper.Keeper
+	BankKeeper            bankkeeper.BaseKeeper
 	StakingKeeper         *stakingkeeper.Keeper
 	SlashingKeeper        slashingkeeper.Keeper
 	MintKeeper            mintkeeper.Keeper
@@ -241,7 +244,7 @@ func NewSimApp(
 		voteExtHandler := NewVoteExtensionHandler()
 		voteExtHandler.SetHandlers(bApp)
 	}
-	baseAppOptions = append(baseAppOptions, voteExtOp)
+	baseAppOptions = append(baseAppOptions, voteExtOp, baseapp.SetOptimisticExecution())
 
 	bApp := baseapp.NewBaseApp(appName, logger, db, txConfig.TxDecoder(), baseAppOptions...)
 	bApp.SetCommitMultiStoreTracer(traceStore)
@@ -290,6 +293,22 @@ func NewSimApp(
 		authtypes.NewModuleAddress(govtypes.ModuleName).String(),
 		logger,
 	)
+
+	// optional: enable sign mode textual by overwriting the default tx config (after setting the bank keeper)
+	enabledSignModes := append(tx.DefaultSignModes, sigtypes.SignMode_SIGN_MODE_TEXTUAL)
+	txConfigOpts := tx.ConfigOptions{
+		EnabledSignModes:           enabledSignModes,
+		TextualCoinMetadataQueryFn: txmodule.NewBankKeeperCoinMetadataQueryFn(app.BankKeeper),
+	}
+	txConfig, err := tx.NewTxConfigWithOptions(
+		appCodec,
+		txConfigOpts,
+	)
+	if err != nil {
+		panic(err)
+	}
+	app.txConfig = txConfig
+
 	app.StakingKeeper = stakingkeeper.NewKeeper(
 		appCodec, runtime.NewKVStoreService(keys[stakingtypes.StoreKey]), app.AccountKeeper, app.BankKeeper, authtypes.NewModuleAddress(govtypes.ModuleName).String(), authcodec.NewBech32Codec(sdk.Bech32PrefixValAddr), authcodec.NewBech32Codec(sdk.Bech32PrefixConsAddr),
 	)
@@ -463,7 +482,7 @@ func NewSimApp(
 
 	app.ModuleManager.RegisterInvariants(app.CrisisKeeper)
 	app.configurator = module.NewConfigurator(app.appCodec, app.MsgServiceRouter(), app.GRPCQueryRouter())
-	err := app.ModuleManager.RegisterServices(app.configurator)
+	err = app.ModuleManager.RegisterServices(app.configurator)
 	if err != nil {
 		panic(err)
 	}
