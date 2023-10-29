@@ -39,6 +39,7 @@ require (
 	cosmossdk.io/x/distribution v0.0.0-20230925135524-a1bc045b3190
 	cosmossdk.io/x/gov v0.0.0-20230925135524-a1bc045b3190
 	cosmossdk.io/x/group v0.0.0-00010101000000-000000000000
+	cosmossdk.io/x/mint v0.0.0-00010101000000-000000000000
 	cosmossdk.io/x/slashing v0.0.0-00010101000000-000000000000
 	cosmossdk.io/x/staking v0.0.0-00010101000000-000000000000
 )
@@ -212,30 +213,31 @@ require (
 
 // SimApp on main always tests the latest extracted SDK modules importing the sdk
 replace (
-	cosmossdk.io/client/v2 => cosmossdk.io/client/v2 v2.0.0-20231027092504-21e69bad0437
-	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20231027092504-21e69bad0437
-	cosmossdk.io/x/authz => cosmossdk.io/x/authz v0.0.0-20231027092504-21e69bad0437
-	cosmossdk.io/x/bank => cosmossdk.io/x/bank v0.0.0-20231027092504-21e69bad0437
-	cosmossdk.io/x/circuit => cosmossdk.io/x/circuit v0.0.0-20231027092504-21e69bad0437
-	cosmossdk.io/x/distribution => cosmossdk.io/x/distribution v0.0.0-20231027092504-21e69bad0437
-	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20231027092504-21e69bad0437
-	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20231027092504-21e69bad0437
-	cosmossdk.io/x/gov => cosmossdk.io/x/gov v0.0.0-20231027092504-21e69bad0437
-	cosmossdk.io/x/group => cosmossdk.io/x/group v0.0.0-20231027092504-21e69bad0437
-	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20231027092504-21e69bad0437
-	cosmossdk.io/x/protocolpool => cosmossdk.io/x/protocolpool v0.0.0-20231027092504-21e69bad0437
-	cosmossdk.io/x/slashing => cosmossdk.io/x/slashing v0.0.0-20231027092504-21e69bad0437
-	cosmossdk.io/x/staking => cosmossdk.io/x/staking v0.0.0-20231027092504-21e69bad0437
-	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20231027092504-21e69bad0437
+	cosmossdk.io/client/v2 => cosmossdk.io/client/v2 v2.0.0-20231028200400-32151e506ea5
+	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20231028200400-32151e506ea5
+	cosmossdk.io/x/authz => cosmossdk.io/x/authz v0.0.0-20231028200400-32151e506ea5
+	cosmossdk.io/x/bank => cosmossdk.io/x/bank v0.0.0-20231028200400-32151e506ea5
+	cosmossdk.io/x/circuit => cosmossdk.io/x/circuit v0.0.0-20231028200400-32151e506ea5
+	cosmossdk.io/x/distribution => cosmossdk.io/x/distribution v0.0.0-20231028200400-32151e506ea5
+	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20231028200400-32151e506ea5
+	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20231028200400-32151e506ea5
+	cosmossdk.io/x/gov => cosmossdk.io/x/gov v0.0.0-20231028200400-32151e506ea5
+	cosmossdk.io/x/group => cosmossdk.io/x/group v0.0.0-20231028200400-32151e506ea5
+	cosmossdk.io/x/mint => cosmossdk.io/x/mint v0.0.0-20231028200400-32151e506ea5
+	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20231028200400-32151e506ea5
+	cosmossdk.io/x/protocolpool => cosmossdk.io/x/protocolpool v0.0.0-20231028200400-32151e506ea5
+	cosmossdk.io/x/slashing => cosmossdk.io/x/slashing v0.0.0-20231028200400-32151e506ea5
+	cosmossdk.io/x/staking => cosmossdk.io/x/staking v0.0.0-20231028200400-32151e506ea5
+	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20231028200400-32151e506ea5
 )
 
 // Below are the long-lived replace of the SimApp
 replace (
-	cosmossdk.io/x/params => cosmossdk.io/x/params v0.0.0-20231027092504-21e69bad0437
+	cosmossdk.io/x/params => cosmossdk.io/x/params v0.0.0-20231028200400-32151e506ea5
 	// use cosmos fork of keyring
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 	// Simapp always use the latest version of the cosmos-sdk
-	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20231027092504-21e69bad0437
+	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20231028200400-32151e506ea5
 	// Fix upstream GHSA-h395-qcrw-5vmq and GHSA-3vp4-m3rf-835h vulnerabilities.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.9.1
