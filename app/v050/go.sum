@@ -359,8 +359,8 @@ github.com/cosmos/cosmos-db v1.0.0 h1:EVcQZ+qYag7W6uorBKFPvX6gRjw6Uq2hIh4hCWjuQ0
 github.com/cosmos/cosmos-db v1.0.0/go.mod h1:iBvi1TtqaedwLdcrZVYRSSCb6eSy61NLj4UNmdIgs0U=
 github.com/cosmos/cosmos-proto v1.0.0-beta.3 h1:VitvZ1lPORTVxkmF2fAp3IiA61xVwArQYKXTdEcpW6o=
 github.com/cosmos/cosmos-proto v1.0.0-beta.3/go.mod h1:t8IASdLaAq+bbHbjq4p960BvcTqtwuAxid3b/2rOD6I=
-github.com/cosmos/cosmos-sdk v0.50.0-rc.1.0.20231029084734-37ef60177f61 h1:oirjhmutjCr16VJA9UGM6Y28y9Or5km2FbaLKs/uECM=
-github.com/cosmos/cosmos-sdk v0.50.0-rc.1.0.20231029084734-37ef60177f61/go.mod h1:FxbXMhS/Fz47QeviJ3yi1JgB0qCzgclMQ8s7MjD/I88=
+github.com/cosmos/cosmos-sdk v0.50.0-rc.1.0.20231030210655-21605015bd20 h1:h//u8H8I9koU13yFRRMbxaFyzrXMx57+PYOPL6T0tL8=
+github.com/cosmos/cosmos-sdk v0.50.0-rc.1.0.20231030210655-21605015bd20/go.mod h1:fabh2/KfexKQpAVLPH8EtIMoKx0bKB9EUf/6wBWYZqk=
 github.com/cosmos/go-bip39 v1.0.0 h1:pcomnQdrdH22njcAatO0yWojsUnCO3y2tNoV1cb6hHY=
 github.com/cosmos/go-bip39 v1.0.0/go.mod h1:RNJv0H/pOIVgxw6KS7QeX2a0Uo0aKUlfhZ4xuwvCdJw=
 github.com/cosmos/gogogateway v1.2.0 h1:Ae/OivNhp8DqBi/sh2A8a1D0y638GpL3tkmLQAiKxTE=
@@ -368,8 +368,8 @@ github.com/cosmos/gogogateway v1.2.0/go.mod h1:iQpLkGWxYcnCdz5iAdLcRBSw3h7NXeOkZ
 github.com/cosmos/gogoproto v1.4.2/go.mod h1:cLxOsn1ljAHSV527CHOtaIP91kK6cCrZETRBrkzItWU=
 github.com/cosmos/gogoproto v1.4.11 h1:LZcMHrx4FjUgrqQSWeaGC1v/TeuVFqSLa43CC6aWR2g=
 github.com/cosmos/gogoproto v1.4.11/go.mod h1:/g39Mh8m17X8Q/GDEs5zYTSNaNnInBSohtaxzQnYq1Y=
-github.com/cosmos/iavl v1.0.0-rc.1 h1:5+73BEWW1gZOIUJKlk/1fpD4lOqqeFBA8KuV+NpkCpU=
-github.com/cosmos/iavl v1.0.0-rc.1/go.mod h1:CmTGqMnRnucjxbjduneZXT+0vPgNElYvdefjX2q9tYc=
+github.com/cosmos/iavl v1.0.0 h1:bw6t0Mv/mVCJvlMTOPHWLs5uUE3BRBfVWCRelOzl+so=
+github.com/cosmos/iavl v1.0.0/go.mod h1:CmTGqMnRnucjxbjduneZXT+0vPgNElYvdefjX2q9tYc=
 github.com/cosmos/ics23/go v0.10.0 h1:iXqLLgp2Lp+EdpIuwXTYIQU+AiHj9mOC2X9ab++bZDM=
 github.com/cosmos/ics23/go v0.10.0/go.mod h1:ZfJSmng/TBNTBkFemHHHj5YY7VAU/MBU980F4VU1NG0=
 github.com/cosmos/keyring v1.2.0 h1:8C1lBP9xhImmIabyXW4c3vFjjLiBdGCmfLUfeZlV1Yo=
