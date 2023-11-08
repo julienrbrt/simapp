@@ -4,24 +4,24 @@ go 1.21
 
 require (
 	cosmossdk.io/api v0.7.2
-	cosmossdk.io/client/v2 v2.0.0-20231103103049-f73a17f75727
+	cosmossdk.io/client/v2 v2.0.0-beta.1
 	cosmossdk.io/collections v0.4.0 // indirect
 	cosmossdk.io/core v0.11.0
 	cosmossdk.io/depinject v1.0.0-alpha.4
 	cosmossdk.io/log v1.2.1
-	cosmossdk.io/math v1.1.3-rc.1
+	cosmossdk.io/math v1.2.0
 	cosmossdk.io/store v1.0.0
-	cosmossdk.io/tools/confix v0.0.0-20231023160833-026631cd833c
-	cosmossdk.io/x/circuit v0.0.0-20231023160833-026631cd833c
-	cosmossdk.io/x/evidence v0.0.0-20231023160833-026631cd833c
-	cosmossdk.io/x/feegrant v0.0.0-20231023160833-026631cd833c
-	cosmossdk.io/x/nft v0.0.0-20231023160833-026631cd833c
+	cosmossdk.io/tools/confix v0.1.0
+	cosmossdk.io/x/circuit v0.1.0
+	cosmossdk.io/x/evidence v0.1.0
+	cosmossdk.io/x/feegrant v0.1.0
+	cosmossdk.io/x/nft v0.1.0
 	cosmossdk.io/x/tx v0.12.0
-	cosmossdk.io/x/upgrade v0.0.0-20231023160833-026631cd833c
+	cosmossdk.io/x/upgrade v0.1.0
 	github.com/cometbft/cometbft v0.38.0
 	github.com/cosmos/cosmos-db v1.0.0
 	// this version is not used as it is always replaced by the latest Cosmos SDK version
-	github.com/cosmos/cosmos-sdk v0.50.0
+	github.com/cosmos/cosmos-sdk v0.50.1
 	github.com/cosmos/gogoproto v1.4.11
 	github.com/golang/mock v1.6.0
 	github.com/spf13/cast v1.5.1
@@ -201,7 +201,7 @@ replace (
 	// use cosmos fork of keyring
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 	// Simapp always use the latest version of the cosmos-sdk
-	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.50.0-rc.1.0.20231106113818-1313c0e1afd6
+	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.50.2-0.20231107210800-52aabffb871e
 	// Fix upstream GHSA-h395-qcrw-5vmq and GHSA-3vp4-m3rf-835h vulnerabilities.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.9.1
