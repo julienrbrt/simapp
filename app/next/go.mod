@@ -61,6 +61,7 @@ require (
 	github.com/DataDog/zstd v1.5.5 // indirect
 	github.com/Microsoft/go-winio v0.6.0 // indirect
 	github.com/aws/aws-sdk-go v1.45.25 // indirect
+	github.com/aymanbagabas/go-osc52/v2 v2.0.1 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/bgentry/go-netrc v0.0.0-20140422174119-9fd32a8b3d3d // indirect
 	github.com/bgentry/speakeasy v0.1.1-0.20220910012023-760eaf8b6816 // indirect
@@ -147,10 +148,12 @@ require (
 	github.com/lib/pq v1.10.7 // indirect
 	github.com/libp2p/go-buffer-pool v0.1.0 // indirect
 	github.com/linxGnu/grocksdb v1.8.6 // indirect
+	github.com/lucasb-eyer/go-colorful v1.2.0 // indirect
 	github.com/magiconair/properties v1.8.7 // indirect
 	github.com/manifoldco/promptui v0.9.0 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
+	github.com/mattn/go-runewidth v0.0.14 // indirect
 	github.com/matttproud/golang_protobuf_extensions/v2 v2.0.0 // indirect
 	github.com/mdp/qrterminal/v3 v3.2.0 // indirect
 	github.com/minio/highwayhash v1.0.2 // indirect
@@ -158,6 +161,7 @@ require (
 	github.com/mitchellh/go-testing-interface v1.14.1 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/mtibben/percent v0.2.1 // indirect
+	github.com/muesli/termenv v0.15.2 // indirect
 	github.com/oasisprotocol/curve25519-voi v0.0.0-20230904125328-1f23a7beb09a // indirect
 	github.com/oklog/run v1.1.0 // indirect
 	github.com/pelletier/go-toml/v2 v2.1.0 // indirect
@@ -169,6 +173,7 @@ require (
 	github.com/prometheus/common v0.45.0 // indirect
 	github.com/prometheus/procfs v0.12.0 // indirect
 	github.com/rcrowley/go-metrics v0.0.0-20201227073835-cf1acfcdf475 // indirect
+	github.com/rivo/uniseg v0.2.0 // indirect
 	github.com/rogpeppe/go-internal v1.11.0 // indirect
 	github.com/rs/cors v1.8.3 // indirect
 	github.com/rs/zerolog v1.31.0 // indirect
@@ -223,26 +228,26 @@ require (
 
 // SimApp on main always tests the latest extracted SDK modules importing the sdk
 replace (
-	cosmossdk.io/api => cosmossdk.io/api v0.7.3-0.20231209223121-cc9d8526d05a
-	cosmossdk.io/client/v2 => cosmossdk.io/client/v2 v2.0.0-20231209223121-cc9d8526d05a
-	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20231209223121-cc9d8526d05a
-	cosmossdk.io/x/accounts => cosmossdk.io/x/accounts v0.0.0-20231209223121-cc9d8526d05a
-	cosmossdk.io/x/auth => cosmossdk.io/x/auth v0.0.0-20231209223121-cc9d8526d05a
-	cosmossdk.io/x/authz => cosmossdk.io/x/authz v0.0.0-20231209223121-cc9d8526d05a
-	cosmossdk.io/x/bank => cosmossdk.io/x/bank v0.0.0-20231209223121-cc9d8526d05a
-	cosmossdk.io/x/circuit => cosmossdk.io/x/circuit v0.0.0-20231209223121-cc9d8526d05a
-	cosmossdk.io/x/distribution => cosmossdk.io/x/distribution v0.0.0-20231209223121-cc9d8526d05a
-	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20231209223121-cc9d8526d05a
-	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20231209223121-cc9d8526d05a
-	cosmossdk.io/x/gov => cosmossdk.io/x/gov v0.0.0-20231209223121-cc9d8526d05a
-	cosmossdk.io/x/group => cosmossdk.io/x/group v0.0.0-20231209223121-cc9d8526d05a
-	cosmossdk.io/x/mint => cosmossdk.io/x/mint v0.0.0-20231209223121-cc9d8526d05a
-	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20231209223121-cc9d8526d05a
-	cosmossdk.io/x/params => cosmossdk.io/x/params v0.0.0-20231209223121-cc9d8526d05a
-	cosmossdk.io/x/protocolpool => cosmossdk.io/x/protocolpool v0.0.0-20231209223121-cc9d8526d05a
-	cosmossdk.io/x/slashing => cosmossdk.io/x/slashing v0.0.0-20231209223121-cc9d8526d05a
-	cosmossdk.io/x/staking => cosmossdk.io/x/staking v0.0.0-20231209223121-cc9d8526d05a
-	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20231209223121-cc9d8526d05a
+	cosmossdk.io/api => cosmossdk.io/api v0.7.3-0.20231211005502-978fffc5a6e4
+	cosmossdk.io/client/v2 => cosmossdk.io/client/v2 v2.0.0-20231211005502-978fffc5a6e4
+	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20231211005502-978fffc5a6e4
+	cosmossdk.io/x/accounts => cosmossdk.io/x/accounts v0.0.0-20231211005502-978fffc5a6e4
+	cosmossdk.io/x/auth => cosmossdk.io/x/auth v0.0.0-20231211005502-978fffc5a6e4
+	cosmossdk.io/x/authz => cosmossdk.io/x/authz v0.0.0-20231211005502-978fffc5a6e4
+	cosmossdk.io/x/bank => cosmossdk.io/x/bank v0.0.0-20231211005502-978fffc5a6e4
+	cosmossdk.io/x/circuit => cosmossdk.io/x/circuit v0.0.0-20231211005502-978fffc5a6e4
+	cosmossdk.io/x/distribution => cosmossdk.io/x/distribution v0.0.0-20231211005502-978fffc5a6e4
+	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20231211005502-978fffc5a6e4
+	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20231211005502-978fffc5a6e4
+	cosmossdk.io/x/gov => cosmossdk.io/x/gov v0.0.0-20231211005502-978fffc5a6e4
+	cosmossdk.io/x/group => cosmossdk.io/x/group v0.0.0-20231211005502-978fffc5a6e4
+	cosmossdk.io/x/mint => cosmossdk.io/x/mint v0.0.0-20231211005502-978fffc5a6e4
+	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20231211005502-978fffc5a6e4
+	cosmossdk.io/x/params => cosmossdk.io/x/params v0.0.0-20231211005502-978fffc5a6e4
+	cosmossdk.io/x/protocolpool => cosmossdk.io/x/protocolpool v0.0.0-20231211005502-978fffc5a6e4
+	cosmossdk.io/x/slashing => cosmossdk.io/x/slashing v0.0.0-20231211005502-978fffc5a6e4
+	cosmossdk.io/x/staking => cosmossdk.io/x/staking v0.0.0-20231211005502-978fffc5a6e4
+	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20231211005502-978fffc5a6e4
 )
 
 // Below are the long-lived replace of the SimApp
@@ -250,7 +255,7 @@ replace (
 	// use cosmos fork of keyring
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 	// Simapp always use the latest version of the cosmos-sdk
-	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20231209223121-cc9d8526d05a
+	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20231211005502-978fffc5a6e4
 	// Fix upstream GHSA-h395-qcrw-5vmq and GHSA-3vp4-m3rf-835h vulnerabilities.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.9.1
