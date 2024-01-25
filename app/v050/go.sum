@@ -186,8 +186,8 @@ cloud.google.com/go/workflows v1.6.0/go.mod h1:6t9F5h/unJz41YqfBmqSASJSXccBLtD1V
 cloud.google.com/go/workflows v1.7.0/go.mod h1:JhSrZuVZWuiDfKEFxU0/F1PQjmpnpcoISEXH2bcHC3M=
 cosmossdk.io/api v0.7.2 h1:BO3i5fvKMKvfaUiMkCznxViuBEfyWA/k6w2eAF6q1C4=
 cosmossdk.io/api v0.7.2/go.mod h1:IcxpYS5fMemZGqyYtErK7OqvdM0C8kdW3dq8Q/XIG38=
-cosmossdk.io/client/v2 v2.0.0-beta.1.0.20240118205803-02b5997c5192 h1:4lCp0JJlrRX0fN5T2ob87vUFplbFfDfDgvazQGIf95s=
-cosmossdk.io/client/v2 v2.0.0-beta.1.0.20240118205803-02b5997c5192/go.mod h1:Fi+Bqmvo+7wImB5+31CsBheyjBkvQxx8QRQY1acPVDU=
+cosmossdk.io/client/v2 v2.0.0-beta.1.0.20240124105859-5ad1805d0e79 h1:Hr1t0fCq1nbFC7hLs0Xvy9WAiH7Iti5iVLXMM5C37F0=
+cosmossdk.io/client/v2 v2.0.0-beta.1.0.20240124105859-5ad1805d0e79/go.mod h1:8pN6LSVReNnIxrC2QGcvuIJ/m1pJN6FNYn2kAYtYftI=
 cosmossdk.io/collections v0.4.0 h1:PFmwj2W8szgpD5nOd8GWH6AbYNi1f2J6akWXJ7P5t9s=
 cosmossdk.io/collections v0.4.0/go.mod h1:oa5lUING2dP+gdDquow+QjlF45eL1t4TJDypgGd+tv0=
 cosmossdk.io/core v0.11.0 h1:vtIafqUi+1ZNAE/oxLOQQ7Oek2n4S48SWLG8h/+wdbo=
@@ -357,8 +357,8 @@ github.com/cosmos/cosmos-db v1.0.0 h1:EVcQZ+qYag7W6uorBKFPvX6gRjw6Uq2hIh4hCWjuQ0
 github.com/cosmos/cosmos-db v1.0.0/go.mod h1:iBvi1TtqaedwLdcrZVYRSSCb6eSy61NLj4UNmdIgs0U=
 github.com/cosmos/cosmos-proto v1.0.0-beta.3 h1:VitvZ1lPORTVxkmF2fAp3IiA61xVwArQYKXTdEcpW6o=
 github.com/cosmos/cosmos-proto v1.0.0-beta.3/go.mod h1:t8IASdLaAq+bbHbjq4p960BvcTqtwuAxid3b/2rOD6I=
-github.com/cosmos/cosmos-sdk v0.50.4-0.20240123172316-9bfc16389116 h1:WlXEAk91AfQ+gwS2/JHCAuXLs4Tqo9x5luh/Mgj3VU0=
-github.com/cosmos/cosmos-sdk v0.50.4-0.20240123172316-9bfc16389116/go.mod h1:ehEJ6NYUAKWxVGMczCoQJ9XXbEURe1T8KG7mL5PAMok=
+github.com/cosmos/cosmos-sdk v0.50.4-0.20240124112812-bdbd2b09c933 h1:wCkxS1zZv4GaIuOt7eW/1m7tCY2cffZKQbCr/kfKEuI=
+github.com/cosmos/cosmos-sdk v0.50.4-0.20240124112812-bdbd2b09c933/go.mod h1:LDRKYZvK51qnTR9ps8qU4tgTb5oYIJXU8jmfwjLrI+4=
 github.com/cosmos/go-bip39 v1.0.0 h1:pcomnQdrdH22njcAatO0yWojsUnCO3y2tNoV1cb6hHY=
 github.com/cosmos/go-bip39 v1.0.0/go.mod h1:RNJv0H/pOIVgxw6KS7QeX2a0Uo0aKUlfhZ4xuwvCdJw=
 github.com/cosmos/gogogateway v1.2.0 h1:Ae/OivNhp8DqBi/sh2A8a1D0y638GpL3tkmLQAiKxTE=
@@ -978,8 +978,8 @@ github.com/spf13/pflag v1.0.3/go.mod h1:DYY7MBk1bdzusC3SYhjObp+wFpr4gzcvqqNjLnIn
 github.com/spf13/pflag v1.0.5 h1:iy+VFUOCP1a+8yFto/drg2CJ5u0yRoB7fZw3DKv/JXA=
 github.com/spf13/pflag v1.0.5/go.mod h1:McXfInJRrz4CZXVZOBLb0bTZqETkiAhM9Iw0y3An2Bg=
 github.com/spf13/viper v1.3.2/go.mod h1:ZiWeW+zYFKm7srdB9IoDzzZXaJaI5eL9QjNiN/DMA2s=
-github.com/spf13/viper v1.18.1 h1:rmuU42rScKWlhhJDyXZRKJQHXFX02chSVW1IvkPGiVM=
-github.com/spf13/viper v1.18.1/go.mod h1:EKmWIqdnk5lOcmR72yw6hS+8OPYcwD0jteitLMVB+yk=
+github.com/spf13/viper v1.18.2 h1:LUXCnvUvSM6FXAsj6nnfc8Q2tp1dIgUfY9Kc8GsSOiQ=
+github.com/spf13/viper v1.18.2/go.mod h1:EKmWIqdnk5lOcmR72yw6hS+8OPYcwD0jteitLMVB+yk=
 github.com/streadway/amqp v0.0.0-20190404075320-75d898a42a94/go.mod h1:AZpEONHx3DKn8O/DFsRAY58/XVQiIPMTMB1SddzLXVw=
 github.com/streadway/amqp v0.0.0-20190827072141-edfb9018d271/go.mod h1:AZpEONHx3DKn8O/DFsRAY58/XVQiIPMTMB1SddzLXVw=
 github.com/streadway/handy v0.0.0-20190108123426-d5acb3125c2a/go.mod h1:qNTQ5P5JnDBl6z3cMAg/SywNDC5ABu5ApDIw6lUbRmI=
