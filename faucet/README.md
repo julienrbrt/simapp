@@ -20,4 +20,4 @@ npm start
 
 ## Credits
 
-Based on [ping.pub/faucet](https://github.com/ping.pub/faucet).
+Based on [ping.pub/faucet](https://github.com/ping-pub/faucet).
