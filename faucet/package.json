@@ -12,7 +12,7 @@
     "@cosmjs/crypto": "^0.32.2",
     "@cosmjs/proto-signing": "^0.32.2",
     "@cosmjs/stargate": "^0.32.2",
-    "express": "^4.18.2",
+    "express": "^4.18.3",
     "level": "^8.0.1",
     "nodemodule": "^0.3.0"
   }
