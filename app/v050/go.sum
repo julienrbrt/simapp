@@ -359,8 +359,8 @@ github.com/cosmos/cosmos-db v1.0.2 h1:hwMjozuY1OlJs/uh6vddqnk9j7VamLv+0DBlbEXbAK
 github.com/cosmos/cosmos-db v1.0.2/go.mod h1:Z8IXcFJ9PqKK6BIsVOB3QXtkKoqUOp1vRvPT39kOXEA=
 github.com/cosmos/cosmos-proto v1.0.0-beta.4 h1:aEL7tU/rLOmxZQ9z4i7mzxcLbSCY48OdY7lIWTLG7oU=
 github.com/cosmos/cosmos-proto v1.0.0-beta.4/go.mod h1:oeB+FyVzG3XrQJbJng0EnV8Vljfk9XvTIpGILNU/9Co=
-github.com/cosmos/cosmos-sdk v0.50.5-0.20240306143320-2abd2ec8a52f h1:ynJzK/c2nb7opfGQWXpElaDrSftQKb1OUSMXuAH7PaQ=
-github.com/cosmos/cosmos-sdk v0.50.5-0.20240306143320-2abd2ec8a52f/go.mod h1:XDxLZycgyFXEBpgCdxOfYt5//bHCK6Z7b5FqkX6eV7M=
+github.com/cosmos/cosmos-sdk v0.50.5-0.20240307161517-f9041cde5c86 h1:EV7Dczm4q19ZaAE4n4XmCfSFBhz/ol+jDuNU2ov/IOs=
+github.com/cosmos/cosmos-sdk v0.50.5-0.20240307161517-f9041cde5c86/go.mod h1:XDxLZycgyFXEBpgCdxOfYt5//bHCK6Z7b5FqkX6eV7M=
 github.com/cosmos/go-bip39 v1.0.0 h1:pcomnQdrdH22njcAatO0yWojsUnCO3y2tNoV1cb6hHY=
 github.com/cosmos/go-bip39 v1.0.0/go.mod h1:RNJv0H/pOIVgxw6KS7QeX2a0Uo0aKUlfhZ4xuwvCdJw=
 github.com/cosmos/gogogateway v1.2.0 h1:Ae/OivNhp8DqBi/sh2A8a1D0y638GpL3tkmLQAiKxTE=
