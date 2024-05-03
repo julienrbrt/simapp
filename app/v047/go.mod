@@ -1,8 +1,6 @@
 module cosmossdk.io/simapp
 
-go 1.21
-
-toolchain go1.22.2
+go 1.19
 
 require (
 	cosmossdk.io/api v0.3.1
@@ -10,7 +8,7 @@ require (
 	cosmossdk.io/depinject v1.0.0-alpha.4
 	cosmossdk.io/math v1.3.0
 	cosmossdk.io/tools/rosetta v0.2.1
-	github.com/cometbft/cometbft v0.37.6
+	github.com/cometbft/cometbft v0.37.5
 	github.com/cometbft/cometbft-db v0.8.0
 	github.com/cosmos/cosmos-sdk v0.47.8
 	github.com/golang/mock v1.6.0
@@ -188,7 +186,7 @@ replace (
 	// use cosmos fork of keyring
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 	// Simapp always use the latest version of the cosmos-sdk
-	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.47.12-0.20240430131750-7428fe0b7e05
+	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.47.12-0.20240502203846-7009a2e0cdb9
 	// Fix upstream GHSA-h395-qcrw-5vmq and GHSA-3vp4-m3rf-835h vulnerabilities.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.9.0
