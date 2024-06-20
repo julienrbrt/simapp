@@ -4,10 +4,8 @@ import (
 	"context"
 
 	"cosmossdk.io/core/appmodule"
-	storetypes "cosmossdk.io/store/types"
+	"cosmossdk.io/core/store"
 	"cosmossdk.io/x/accounts"
-	authkeeper "cosmossdk.io/x/auth/keeper"
-	epochstypes "cosmossdk.io/x/epochs/types"
 	protocolpooltypes "cosmossdk.io/x/protocolpool/types"
 	upgradetypes "cosmossdk.io/x/upgrade/types"
 
@@ -22,17 +20,11 @@ import (
 // v0.50.x to v0.51.x.
 const UpgradeName = "v050-to-v051"
 
-func (app SimApp) RegisterUpgradeHandlers() {
+func (app *SimApp) RegisterUpgradeHandlers() {
 	app.UpgradeKeeper.SetUpgradeHandler(
 		UpgradeName,
 		func(ctx context.Context, _ upgradetypes.Plan, fromVM appmodule.VersionMap) (appmodule.VersionMap, error) {
-			// sync accounts and auth module account number
-			err := authkeeper.MigrateAccountNumberUnsafe(ctx, &app.AuthKeeper)
-			if err != nil {
-				return nil, err
-			}
-
-			return app.ModuleManager.RunMigrations(ctx, app.Configurator(), fromVM)
+			return app.ModuleManager().RunMigrations(ctx, fromVM)
 		},
 	)
 
@@ -42,18 +34,18 @@ func (app SimApp) RegisterUpgradeHandlers() {
 	}
 
 	if upgradeInfo.Name == UpgradeName && !app.UpgradeKeeper.IsSkipHeight(upgradeInfo.Height) {
-		storeUpgrades := storetypes.StoreUpgrades{
+		storeUpgrades := store.StoreUpgrades{
 			Added: []string{
-				accounts.StoreKey,
-				protocolpooltypes.StoreKey,
-				epochstypes.StoreKey,
+				accounts.ModuleName,
+				protocolpooltypes.ModuleName,
 			},
 			Deleted: []string{
-				crisistypes.StoreKey, // The SDK discontinued the crisis module in v0.51.0
+				crisistypes.ModuleName, // The SDK discontinued the crisis module in v0.51.0
 			},
 		}
 
 		// configure store loader that checks if version == upgradeHeight and applies store upgrades
-		app.SetStoreLoader(upgradetypes.UpgradeStoreLoader(upgradeInfo.Height, &storeUpgrades))
+		_ = storeUpgrades
+		// app.SetStoreLoader(upgradetypes.UpgradeStoreLoader(upgradeInfo.Height, &storeUpgrades))
 	}
 }
