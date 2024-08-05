@@ -1,4 +1,6 @@
 #!/bin/bash
+# update-v2 is an updated version of update.sh that is used to update the simapp to the latest version of the cosmos-sdk.
+# it takes a list of go.mod names that it updates from the main branch instead of the latest commit from the release branch
 
 if [ $# -lt 2 ]; then
     echo "Usage: clone.sh <branch> <target-directory> [<go_mod_name1> <go_mod_name2> ...]"
@@ -23,7 +25,7 @@ COMMIT=$(git rev-parse HEAD)
 echo $COMMIT > ./COMMIT
 
 # keep only simapp v2
-git filter-branch --subdirectory-filter simapp
+git filter-branch --subdirectory-filter simapp/v2
 rm -rf .git
 
 # get cosmos-sdk latest commit

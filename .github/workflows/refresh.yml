@@ -20,9 +20,21 @@ jobs:
           go-version: "1.22"
           check-latest: true
 
+      - name: update simapp next v2
+        if: always()
+        run: make update-next-v2
+
       - name: update simapp next
         if: always()
         run: make update-next
+
+      - name: update simapp v052 v2
+        if: always()
+        run: make update-v052-v2
+
+      - name: update simapp v052
+        if: always()
+        run: make update-v052
 
       - name: update simapp v050
         if: always()

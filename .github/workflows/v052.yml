@@ -1,0 +1,28 @@
+name: Build and Test v0.52.x
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+jobs:
+  build:
+    name: Go CI
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.22"
+          check-latest: true
+      - name: Test v052
+        run: |
+          cd app/v052
+          go mod tidy
+          go test -v ./...
+      - name: Test v052 v2
+        run: |
+          cd app/v052-v2
+          go mod tidy
+          go test -v ./...
