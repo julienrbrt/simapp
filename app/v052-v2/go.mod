@@ -6,14 +6,14 @@ require (
 	cosmossdk.io/api v0.8.0 // main
 	cosmossdk.io/client/v2 v2.0.0-00010101000000-000000000000
 	cosmossdk.io/core v1.0.0 // main
-	cosmossdk.io/core/testing v0.0.0-20240817194932-ee04cee0cafb // indirect; main
+	cosmossdk.io/core/testing v0.0.0-20240818140413-cd929906198a // indirect; main
 	cosmossdk.io/depinject v1.0.0
 	cosmossdk.io/log v1.4.0
 	cosmossdk.io/math v1.3.0
-	cosmossdk.io/runtime/v2 v2.0.0-20240817194932-ee04cee0cafb // main
-	cosmossdk.io/server/v2 v2.0.0-20240817194932-ee04cee0cafb // main
+	cosmossdk.io/runtime/v2 v2.0.0-20240818140413-cd929906198a // main
+	cosmossdk.io/server/v2 v2.0.0-20240818140413-cd929906198a // main
 	cosmossdk.io/server/v2/cometbft v0.0.0-00010101000000-000000000000
-	cosmossdk.io/store/v2 v2.0.0-20240817194932-ee04cee0cafb // main
+	cosmossdk.io/store/v2 v2.0.0-20240818140413-cd929906198a // main
 	cosmossdk.io/tools/confix v0.0.0-00010101000000-000000000000
 	cosmossdk.io/x/accounts v0.0.0-20240226161501-23359a0b6d91
 	cosmossdk.io/x/auth v0.0.0-00010101000000-000000000000
@@ -56,8 +56,8 @@ require (
 	cosmossdk.io/errors v1.0.1 // indirect
 	cosmossdk.io/errors/v2 v2.0.0-20240731132947-df72853b3ca5 // indirect
 	cosmossdk.io/schema v0.1.1 // indirect
-	cosmossdk.io/server/v2/appmanager v0.0.0-20240817194932-ee04cee0cafb // indirect; main
-	cosmossdk.io/server/v2/stf v0.0.0-20240817194932-ee04cee0cafb // indirect; main
+	cosmossdk.io/server/v2/appmanager v0.0.0-20240818140413-cd929906198a // indirect; main
+	cosmossdk.io/server/v2/stf v0.0.0-20240818140413-cd929906198a // indirect; main
 	cosmossdk.io/store v1.1.1-0.20240815194237-858ec2fcb897 // indirect; main
 	cosmossdk.io/x/accounts/defaults/lockup v0.0.0-20240417181816-5e7aae0db1f5 // indirect
 	cosmossdk.io/x/accounts/defaults/multisig v0.0.0-00010101000000-000000000000 // indirect
@@ -249,13 +249,13 @@ require (
 // SimApp on main always tests the latest extracted SDK modules importing the sdk
 replace (
 	// pseudo version lower than the latest tag
-	cosmossdk.io/api => cosmossdk.io/api v0.7.3-0.20240817194932-ee04cee0cafb // main
+	cosmossdk.io/api => cosmossdk.io/api v0.7.3-0.20240818140413-cd929906198a // main
 	cosmossdk.io/client/v2 => cosmossdk.io/client/v2 v2.0.0-20240817200350-8ca4c3c98106
 	// pseudo version lower than the latest tag
-	cosmossdk.io/core => cosmossdk.io/core v0.12.1-0.20240817194932-ee04cee0cafb // main
+	cosmossdk.io/core => cosmossdk.io/core v0.12.1-0.20240818140413-cd929906198a // main
 	cosmossdk.io/server/v2/cometbft => cosmossdk.io/server/v2/cometbft v0.0.0-20240817200350-8ca4c3c98106
 	// pseudo version lower than the latest tag
-	cosmossdk.io/store => cosmossdk.io/store v1.0.0-rc.0.0.20240817194932-ee04cee0cafb // main
+	cosmossdk.io/store => cosmossdk.io/store v1.0.0-rc.0.0.20240818140413-cd929906198a // main
 	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20240817200350-8ca4c3c98106
 	cosmossdk.io/x/accounts => cosmossdk.io/x/accounts v0.0.0-20240817200350-8ca4c3c98106
 	cosmossdk.io/x/accounts/defaults/lockup => cosmossdk.io/x/accounts/defaults/lockup v0.0.0-20240817200350-8ca4c3c98106
