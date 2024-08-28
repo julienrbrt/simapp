@@ -178,7 +178,7 @@ require (
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
 	github.com/oasisprotocol/curve25519-voi v0.0.0-20230904125328-1f23a7beb09a // indirect
 	github.com/oklog/run v1.1.0 // indirect
-	github.com/pelletier/go-toml/v2 v2.2.2 // indirect
+	github.com/pelletier/go-toml/v2 v2.2.3 // indirect
 	github.com/petermattis/goid v0.0.0-20240327183114-c42a807a84ba // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect
@@ -247,31 +247,31 @@ require (
 
 // SimApp on main always tests the latest extracted SDK modules importing the sdk
 replace (
-	cosmossdk.io/client/v2 => cosmossdk.io/client/v2 v2.0.0-20240826140124-19e0de5e0aab
-	cosmossdk.io/collections => cosmossdk.io/collections v0.4.1-0.20240826140124-19e0de5e0aab
-	cosmossdk.io/core => cosmossdk.io/core v0.12.1-0.20240826140124-19e0de5e0aab
-	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20240826140124-19e0de5e0aab
-	cosmossdk.io/x/accounts => cosmossdk.io/x/accounts v0.0.0-20240826140124-19e0de5e0aab
-	cosmossdk.io/x/accounts/defaults/lockup => cosmossdk.io/x/accounts/defaults/lockup v0.0.0-20240826140124-19e0de5e0aab
-	cosmossdk.io/x/accounts/defaults/multisig => cosmossdk.io/x/accounts/defaults/multisig v0.0.0-20240826140124-19e0de5e0aab
-	cosmossdk.io/x/auth => cosmossdk.io/x/auth v0.0.0-20240826140124-19e0de5e0aab
-	cosmossdk.io/x/authz => cosmossdk.io/x/authz v0.0.0-20240826140124-19e0de5e0aab
-	cosmossdk.io/x/bank => cosmossdk.io/x/bank v0.0.0-20240826140124-19e0de5e0aab
-	cosmossdk.io/x/circuit => cosmossdk.io/x/circuit v0.0.0-20240826140124-19e0de5e0aab
-	cosmossdk.io/x/consensus => cosmossdk.io/x/consensus v0.0.0-20240826140124-19e0de5e0aab
-	cosmossdk.io/x/distribution => cosmossdk.io/x/distribution v0.0.0-20240826140124-19e0de5e0aab
-	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20240826140124-19e0de5e0aab
-	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20240826140124-19e0de5e0aab
-	cosmossdk.io/x/gov => cosmossdk.io/x/gov v0.0.0-20240826140124-19e0de5e0aab
-	cosmossdk.io/x/group => cosmossdk.io/x/group v0.0.0-20240826140124-19e0de5e0aab
-	cosmossdk.io/x/mint => cosmossdk.io/x/mint v0.0.0-20240826140124-19e0de5e0aab
-	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20240826140124-19e0de5e0aab
-	cosmossdk.io/x/params => cosmossdk.io/x/params v0.0.0-20240826140124-19e0de5e0aab
-	cosmossdk.io/x/protocolpool => cosmossdk.io/x/protocolpool v0.0.0-20240826140124-19e0de5e0aab
-	cosmossdk.io/x/slashing => cosmossdk.io/x/slashing v0.0.0-20240826140124-19e0de5e0aab
-	cosmossdk.io/x/staking => cosmossdk.io/x/staking v0.0.0-20240826140124-19e0de5e0aab
-	cosmossdk.io/x/tx => cosmossdk.io/x/tx v0.13.4-0.20240826140124-19e0de5e0aab
-	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20240826140124-19e0de5e0aab
+	cosmossdk.io/client/v2 => cosmossdk.io/client/v2 v2.0.0-20240827180440-ed25f88a13ce
+	cosmossdk.io/collections => cosmossdk.io/collections v0.4.1-0.20240827180440-ed25f88a13ce
+	cosmossdk.io/core => cosmossdk.io/core v0.12.1-0.20240827180440-ed25f88a13ce
+	cosmossdk.io/tools/confix => cosmossdk.io/tools/confix v0.0.0-20240827180440-ed25f88a13ce
+	cosmossdk.io/x/accounts => cosmossdk.io/x/accounts v0.0.0-20240827180440-ed25f88a13ce
+	cosmossdk.io/x/accounts/defaults/lockup => cosmossdk.io/x/accounts/defaults/lockup v0.0.0-20240827180440-ed25f88a13ce
+	cosmossdk.io/x/accounts/defaults/multisig => cosmossdk.io/x/accounts/defaults/multisig v0.0.0-20240827180440-ed25f88a13ce
+	cosmossdk.io/x/auth => cosmossdk.io/x/auth v0.0.0-20240827180440-ed25f88a13ce
+	cosmossdk.io/x/authz => cosmossdk.io/x/authz v0.0.0-20240827180440-ed25f88a13ce
+	cosmossdk.io/x/bank => cosmossdk.io/x/bank v0.0.0-20240827180440-ed25f88a13ce
+	cosmossdk.io/x/circuit => cosmossdk.io/x/circuit v0.0.0-20240827180440-ed25f88a13ce
+	cosmossdk.io/x/consensus => cosmossdk.io/x/consensus v0.0.0-20240827180440-ed25f88a13ce
+	cosmossdk.io/x/distribution => cosmossdk.io/x/distribution v0.0.0-20240827180440-ed25f88a13ce
+	cosmossdk.io/x/evidence => cosmossdk.io/x/evidence v0.0.0-20240827180440-ed25f88a13ce
+	cosmossdk.io/x/feegrant => cosmossdk.io/x/feegrant v0.0.0-20240827180440-ed25f88a13ce
+	cosmossdk.io/x/gov => cosmossdk.io/x/gov v0.0.0-20240827180440-ed25f88a13ce
+	cosmossdk.io/x/group => cosmossdk.io/x/group v0.0.0-20240827180440-ed25f88a13ce
+	cosmossdk.io/x/mint => cosmossdk.io/x/mint v0.0.0-20240827180440-ed25f88a13ce
+	cosmossdk.io/x/nft => cosmossdk.io/x/nft v0.0.0-20240827180440-ed25f88a13ce
+	cosmossdk.io/x/params => cosmossdk.io/x/params v0.0.0-20240827180440-ed25f88a13ce
+	cosmossdk.io/x/protocolpool => cosmossdk.io/x/protocolpool v0.0.0-20240827180440-ed25f88a13ce
+	cosmossdk.io/x/slashing => cosmossdk.io/x/slashing v0.0.0-20240827180440-ed25f88a13ce
+	cosmossdk.io/x/staking => cosmossdk.io/x/staking v0.0.0-20240827180440-ed25f88a13ce
+	cosmossdk.io/x/tx => cosmossdk.io/x/tx v0.13.4-0.20240827180440-ed25f88a13ce
+	cosmossdk.io/x/upgrade => cosmossdk.io/x/upgrade v0.0.0-20240827180440-ed25f88a13ce
 )
 
 // Below are the long-lived replace of the SimApp
@@ -279,7 +279,7 @@ replace (
 	// use cosmos fork of keyring
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 	// Simapp always use the latest version of the cosmos-sdk
-	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20240826140124-19e0de5e0aab
+	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20240827180440-ed25f88a13ce
 	// Fix upstream GHSA-h395-qcrw-5vmq and GHSA-3vp4-m3rf-835h vulnerabilities.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.9.1
@@ -289,13 +289,13 @@ replace (
 
 // server v2 integration
 replace (
-	cosmossdk.io/api => cosmossdk.io/api v0.7.3-0.20240826140124-19e0de5e0aab
-	cosmossdk.io/core/testing => cosmossdk.io/core/testing v0.0.0-20240826140124-19e0de5e0aab
-	cosmossdk.io/runtime/v2 => cosmossdk.io/runtime/v2 v2.0.0-20240826140124-19e0de5e0aab
-	cosmossdk.io/server/v2 => cosmossdk.io/server/v2 v2.0.0-20240826140124-19e0de5e0aab
-	cosmossdk.io/server/v2/appmanager => cosmossdk.io/server/v2/appmanager v0.0.0-20240826140124-19e0de5e0aab
-	cosmossdk.io/server/v2/cometbft => cosmossdk.io/server/v2/cometbft v0.0.0-20240826140124-19e0de5e0aab
-	cosmossdk.io/server/v2/stf => cosmossdk.io/server/v2/stf v0.0.0-20240826140124-19e0de5e0aab
-	cosmossdk.io/store => cosmossdk.io/store v1.0.0-rc.0.0.20240826140124-19e0de5e0aab
-	cosmossdk.io/store/v2 => cosmossdk.io/store/v2 v2.0.0-20240826140124-19e0de5e0aab
+	cosmossdk.io/api => cosmossdk.io/api v0.7.3-0.20240827180440-ed25f88a13ce
+	cosmossdk.io/core/testing => cosmossdk.io/core/testing v0.0.0-20240827180440-ed25f88a13ce
+	cosmossdk.io/runtime/v2 => cosmossdk.io/runtime/v2 v2.0.0-20240827180440-ed25f88a13ce
+	cosmossdk.io/server/v2 => cosmossdk.io/server/v2 v2.0.0-20240827180440-ed25f88a13ce
+	cosmossdk.io/server/v2/appmanager => cosmossdk.io/server/v2/appmanager v0.0.0-20240827180440-ed25f88a13ce
+	cosmossdk.io/server/v2/cometbft => cosmossdk.io/server/v2/cometbft v0.0.0-20240827180440-ed25f88a13ce
+	cosmossdk.io/server/v2/stf => cosmossdk.io/server/v2/stf v0.0.0-20240827180440-ed25f88a13ce
+	cosmossdk.io/store => cosmossdk.io/store v1.0.0-rc.0.0.20240827180440-ed25f88a13ce
+	cosmossdk.io/store/v2 => cosmossdk.io/store/v2 v2.0.0-20240827180440-ed25f88a13ce
 )
