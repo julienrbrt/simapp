@@ -1,3 +1,9 @@
+## Sunset notice
+
+The Cosmos SDK team developed its own in house testnet infrastructure.
+The project is now no more maintained and the nodes have been shut down.
+Check out the [Cosmos SDK testnets](https://status.interchainsdk.io/status/testnets) for the latest testnet information.
+
 # `simapp.zone`
 
 `simapp.zone` is a set of live raw `SimApp` instances from the Cosmos SDK.
